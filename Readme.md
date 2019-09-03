@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Oleg Gorbunov](https://up.htmlacademy.ru/htmlcss/26/user/1079599).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Вилков](https://htmlacademy.ru/profile/id1147147).
 
 ---
 
