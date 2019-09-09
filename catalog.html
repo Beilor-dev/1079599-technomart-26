@@ -8,10 +8,9 @@
   </head>
   <body>
    <header class="site-header">
-    <div class="header-centr">
-      <div class="header-logo">
-        <a class="header-logo" href=""  width="220" height="50">ТЕХНОМАРТ</a> 
-      <form action="">
+      <nav class="header-centr">
+        <a class="header-logo" href="index.html"  width="220" height="50">ТЕХНОМАРТ</a> 
+      <form action="" method="">
         <input id="search-input" type="text" placeholder="Поиск:">
           <svg class="btn-search-ico"  width="17px" height="17px"></svg>
     </form>
@@ -20,26 +19,23 @@
       <a class="basket" href="#">
         <svg class="basket-ico" width="15px" height="15px"></svg>Корзина: 10</a>
       <a class="order-button" href="#">Оформить заказ</a>   
-      </div>    
-    </div>
+      </nav>    
+    
  
     <div class="header-middle">
       <p class="header-info"> Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <div class="header-contact">
-        <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         <p class="header-phone"><svg class="phone-ico" width="18px" height="17px"></svg>+7 (812) 555-05-55</p>
       </div>
-      <ul class="private-office-username">
-        <li>
+      <div class="private-office-username">
         <a href=""><svg class="bookmarks-ico" width="20px" height="18px"></svg>Равшан Джамшутович</a>
         <a href=""><svg class="bookmarks-ico" width="20px" height="17px"> <span class="visually-hidden">Выход</span></svg></a>
        <ul class="private-office-list">
         <li class="private-office-order"><a href="#">Мои Заказы</a></li>
-
         <li class="private-office-cabinet"><a href="#">Личный кабинет</a></li>
-        </ul>
-      </li>
       </ul>
+      </div>
     </div>
     <nav class="header-nav">
       <ul class="header-nav-list">
@@ -56,16 +52,16 @@
    <main>
      <nav class="breadcrumbs central">
        <ul class="breadcrumbs-list">
-         <li class="breadcrumbs-item-home"><a href=""><span class="visually-hidden">Главная</span></a></li>
-         <li class="breadcrumbs-item">Каталог</li>
-         <li class="breadcrumbs-item">Инструмент</li>
+         <li class="breadcrumbs-item-home"><a href="index.html"><span class="visually-hidden">Главная</span></a></li>
+         <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
+         <li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
          <li class="breadcrumbs-item">Перфораторы</li>
        </ul>
      </nav>
      <h1>ПЕРФОРАТОРЫ</h1>
      <div class="catalog-container">
       <aside class="catalog-filters">
-        <form action="">
+        <form action="" method="">
         <fieldset class="filters-brands">
           <legend class="filters-brands-tittle">ПРОИЗВОДИТЕЛИ:</legend>
           <ul class="filters-brands-list">
@@ -77,7 +73,7 @@
           </ul>
         </fieldset>
         <fieldset class="filters-supply">
-          <legend class="filters-supply-tittle" >ПИТАНИЕ:</legend>
+          <legend class="filters-supply-tittle">ПИТАНИЕ:</legend>
           <ul class="filters-supply-list">
             <li class="filters-supply-item">Аккумуляторные</li>
             <li class="filters-supply-item">Сетевые</li>
@@ -196,7 +192,7 @@
         </div>
    </main>
    <footer class="site-footer">
-      <div class="site-footer-center">
+      <nav class="site-footer-center">
         <a class="footer-logo" href=""  width="220" height="68">ТЕХНОМАРТ</a>
         <ul class="footer-nav-list">
           <li class="footer-nav-link"><a href="#">Компания</a></li>
@@ -205,11 +201,10 @@
           <li class="footer-nav-link"><a href="#">Доставка</a></li>
           <li class="footer-nav-link"><a href="#">Контакты</a></li>
         </ul> 
-        </div> 
+        </nav> 
       <div class="site-footer-middle">
-         <p class="footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-    +7 (812) 555-05-55
-    </p>
+        <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+         <p class="footer-phone">+7 (812) 555-05-55</p>
         <ul class="footer-nav-catalog">
           <li class="footer-nav-item"><a href="#">Материалы</a></li>
           <li class="footer-nav-item"><a href="#">Техника</a></li>
@@ -227,7 +222,7 @@
         <li class="social-link"><a href="">Инстаграм</a></li>
       </ul>
       </div>
-      <p class="footer-email">Обратная связь:<a href="">mail@htmlacademy.ru</a></p>
+      <p class="footer-email">Обратная связь:<a href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
       <p class="footer-dev">Разработано-<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>       
       </div>
     </footer>   

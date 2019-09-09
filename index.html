@@ -8,10 +8,9 @@
   </head>
   <body>
    <header class="site-header">
-   	<div class="header-centr">
-   		<div class="header-logo">
+   		<nav class="header-centr">
    			<a class="header-logo" href=""  width="220" height="50">ТЕХНОМАРТ</a> 
-   		<form action="">
+   		<form action="" method="">
    			<input id="search-input" type="text" placeholder="Поиск:">
    				<svg class="btn-search-ico"  width="17px"	height="17px"></svg>
 		</form>
@@ -20,13 +19,13 @@
 	    <a class="basket" href="#">
 	    	<svg class="basket-ico" width="15px" height="15px"></svg>Корзина: 0</a>
 	    <a class="order-button" href="#">Оформить заказ</a>   
-	    </div>		
-   	</div>
+	    </nav>		
+   
  
    	<div class="header-middle">
    		<p class="header-info"> Интернет-магазин строительных материалов и инструментов для ремонта</p>
    		<div class="header-contact">
-   			<p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+   			<address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
    			<p class="header-phone"><svg class="phone-ico" width="18px" height="17px"></svg>+7 (812) 555-05-55</p>
    		</div>
    		<ul class="private office">
@@ -59,9 +58,11 @@
 		Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
    		<div class="services-container">
    			<div class="services-operation">
-   				<input type="radio" id="check1"><label for="check1">Доставка</label><Br>
-   				<input type="radio" id="check2"><label for="check2">Гарантия</label><Br>
-  			    <input type="radio" id="check3"><label for="check3">Кредит</label>	
+				<ul class="services-operation-list">	
+   				<li class="services-operation-item">Доставка</li>
+   				<li class="services-operation-item">Гарантия</li>
+  			    <li class="services-operation-item">Кредит</li>	
+                </ul>
    			</div>
    			<div class="services-operation">
    				<section class="services-operation-delivery">
@@ -100,7 +101,7 @@
    </div>
    </main>
    <footer class="site-footer">
-   		<div class="site-footer-center">
+   		<nav class="site-footer-center">
    			<a class="footer-logo" href=""  width="220" height="68">ТЕХНОМАРТ</a>
    			<ul class="footer-nav-list">
    				<li class="footer-nav-link"><a href="#">Компания</a></li>
@@ -109,11 +110,10 @@
    				<li class="footer-nav-link"><a href="#">Доставка</a></li>
    				<li class="footer-nav-link"><a href="#">Контакты</a></li>
    			</ul> 
-   	    </div> 
+   	    </nav> 
    		<div class="site-footer-middle">
-   			 <p class="footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-		+7 (812) 555-05-55
-		</p>
+   			 <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+		     <p class="footer-phone">+7 (812) 555-05-55</p>
    	   	<ul class="footer-nav-catalog">
    	    	<li class="footer-nav-item"><a href="#">Материалы</a></li>
    	    	<li class="footer-nav-item"><a href="#">Техника</a></li>
@@ -131,7 +131,7 @@
 				<li class="social-link"><a href="">Инстаграм</a></li>
 			</ul>
 			</div>
-			<p class="footer-email">Обратная связь:<a href="">mail@htmlacademy.ru</a></p>
+			<p class="footer-email">Обратная связь:<a href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
 			<p class="footer-dev">Разработано-<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>  			
    		</div>
     </footer>   
