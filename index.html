@@ -10,7 +10,7 @@
  <header class="site-header">
    <nav class="header-centr">
     <a class="header-logo" href="#">ТЕХНОМАРТ</a> 
-    <form action="search-form" method="get">
+    <form action="search-form" method="POST">
       <input id="search-input" type="text" placeholder="Поиск:">
       <svg class="btn-search-ico"  width="17px"	height="17px"></svg>  
     </form>
@@ -28,7 +28,7 @@
         <a href="tel: +7812555-05-55">+7 (812) 555-05-55</a>
       </p>
     </div>
-    <ul class="private office">
+    <ul class="private-office">
       <li class="private-office-input"><a href="#">Войти</a></li>
       <li class="private-office-registration"><a href="#">Регистрация</a></li>
     </ul>
@@ -53,29 +53,29 @@
       <div class="category-block__left">
         <a href="#" class="category-block__item">
          <h3 class="">Материалы</h3>
-         <p>На любой вкус</p>
+         <p class="block-item-depiction">На любой вкус</p>
          <img src="URL" alt="">
        </a>
        <a href="#" class="category-block__item">
-        <h3 class="">Инструмент</h3>
-        <p>На все случаи</p>
+        <h3 class="block-item-tittle">Инструмент</h3>
+        <p class="block-item-depiction">На все случаи</p>
         <img src="URL" alt="">
       </a>
       <div class="category-block__slider">
-       <div class="categiry-block__slide">
-         <h4 class="">Дрели</h4>
-         <p class="">Соседям на радость!</p>
+       <div class="category-block__slide">
+         <h4 class="block-item-tittle">Дрели</h4>
+         <p class="block-item-depiction">Соседям на радость!</p>
          <a class="" href="#">Открыть каталог</a>
          <!-- картинка будет фоном -->
        </div>
-       <div class="categiry-block__slide">
-         <h4 class="">Перфораторы</h4>
-         <p class="">Настоящие мужские игрушки</p>
+       <div class="category-block__slide">
+         <h4 class="block-item-tittle">Перфораторы</h4>
+         <p class="block-item-depiction">Настоящие мужские игрушки</p>
          <a class="" href="#">Открыть каталог</a>
          <!-- картинка будет фоном -->
        </div>
-       <span class="categiry-block__arrow categiry-block__arrow_left"></span>
-       <span class="categiry-block__arrow categiry-block__arrow_right"></span>
+       <span class="category-block__arrow categiry-block__arrow_left"></span>
+       <span class="category-block__arrow categiry-block__arrow_right"></span>
        <div class="category-block__radio-wrapper">
          <span class="category-block__radio"></span>
          <span class="category-block__radio"></span>
@@ -84,31 +84,31 @@
    </div>
    <div class="category-block__right">
      <a href="#" class="category-block__item">
-       <h3 class="">Техника</h3>
-       <p>Для стройки</p>
-       <img src="URL" alt="">
+       <h3 class="block-item-tittle">Техника</h3>
+       <p class="block-item-depiction">Для стройки</p>
+       <img src="URL" alt="Техника для стройки">
      </a>
      <a href="#" class="category-block__item">
-      <h3 class="">Скидки 50%</h3>
-      <p>На 350 товаров</p>
-      <img src="URL" alt="">
+      <h3 class="block-item-tittle">Скидки 50%</h3>
+      <p class="block-item-depiction">На 350 товаров</p>
+      <img src="URL" alt="Распродажа">
     </a>
     <a href="#" class="category-block__item">
-      <h3 class="">Доставка</h3>
-      <p>Бесплатно</p>
-      <img src="URL" alt="">
+      <h3 class="block-item-tittle">Доставка</h3>
+      <p class="block-item-depiction">Бесплатно</p>
+      <img src="URL" alt="Бесплатная доставка">
     </a>
   </div>
 </div>
 </section>
-<section class="">
-  <div class="">
-    <h3 class="">Популярные товары:</h3>
-    <a class="" href="#">Все популярные товары</a>
+<section class="favorite-centr">
+  <div class="favorite-centr-container">
+    <h3 class="favorite-tittle">Популярные товары:</h3>
+    <a class="favorite-centr-button" href="#">Все популярные товары</a>
   </div>
-  <article class="favorite-centr">
+  <article class="favorite-item">
    <div class="favorite-img-container">
-    <img class="favorite-item-img" src="img/catalog-item-1.png" alt="">
+    <img class="favorite-item-img" src="img/catalog-item-1.png" alt="Модель перфоратора BOSCH BFG 9000">
   </div>
   <h3 class="favorite-item-tittle">Перфоратор BOSCH BFG 9000</h3>
   <p class="favorite-old-price">32500 Р.</p>
@@ -118,9 +118,9 @@
     <a class="favorite-button-bookmarks" href="#">В закладки</a>
   </div>
 </article>
-<article class="">
+<article class="favorite-item">
   <div class="favorite-img-container">
-    <img class="favorite-item-img" src="img/catalog-item-2.png" alt="">
+    <img class="favorite-item-img" src="img/catalog-item-2.png" alt="Модель перфоратора  BOSCH BFG 3000">
   </div>
   <h3 class="favorite-item-tittle">Перфоратор BOSCH BFG 3000</h3>
   <p class="favorite-old-price">22500 Р.</p>
@@ -130,9 +130,9 @@
     <a class="favorite-button-bookmarks" href="#">В закладки</a>
   </div> 
 </article>
-<article class="">
+<article class="favorite-item">
   <div class="favorite-img-container">
-    <img class="favorite-item-img" src="img/catalog-item-3.png" alt="">
+    <img class="favorite-item-img" src="img/catalog-item-3.png" alt="ПМодель перфоратора  BOSCH BFG 6000">
   </div>
   <h3 class="favorite-item-tittle">Перфоратор BOSCH BFG 6000</h3>
   <p class="favorite-old-price">30500 Р.</p>
@@ -142,9 +142,9 @@
     <a class="favorite-button-bookmarks" href="#">В закладки</a>
   </div> 
 </article>
-<article class="">
+<article class="favorite-item">
   <div class="favorite-img-container">
-    <img class="favorite-item-img" src="img/catalog-item-4.png" alt="">
+    <img class="favorite-item-img" src="img/catalog-item-4.png" alt="Модель перфоратора  BOSCH BFG 2000">
   </div>
   <h3 class="favorite-item-tittle">Перфоратор BOSCH BFG 2000</h3>
   <p class="favorite-new-price">12500 Р.</p>
@@ -154,48 +154,48 @@
   </div> 
 </article>
 </section>
-<section class="">
-  <div class="">
-    <h2 class="">Популярные производители:</h2>
-    <a class="" href="#">Все производители</a>
-    <div class="">
-      <a class="" href="#">
-        <img class="" src="img/brand-1.png"  alt="BOSCH">
+<section class="brand-centr">
+  <div class="brand-centr-container">
+    <h2 class="brand-centr-tittle">Популярные производители:</h2>
+    <a class="brand-button" href="#">Все производители</a>
+    <div class="brand-item">
+      <a href="#">
+        <img class="brand-item-img" src="img/brand-1.png"  alt="Фирма производителя BOSCH">
       </a>
     </div>
-    <div class="">
-      <a class="" href="#">
-        <img class="" src="img/brand-2.png"  alt="MAKITA">
+    <div class="brand-item">
+      <a href="#">
+        <img class="brand-item-img" src="img/brand-2.png"  alt="Фирма производителя MAKITA">
       </a>
     </div>
-    <div>
-      <a class="" href="#">
-        <img class="" src="img/brand-3.png" alt="DEWALT">
+    <div class="brand-item">
+      <a href="#">
+        <img class="brand-item-img" src="img/brand-3.png" alt="Фирма производителя DEWALT">
       </a>
     </div>
-    <div>
-      <a  class="" href="#">
-        <img class="" src="img/brand-4.png"  alt="ИНТЕРСКОЛ">
+    <div class="brand-item"> 
+      <a href="#">
+        <img class="brand-item-img" src="img/brand-4.png"  alt="Фирма производителя ИНТЕРСКОЛ">
       </a>
     </div>
-    <div>
-      <a  class="" href="#">
-        <img class="" src="img/brand-5.png"  alt="HITACHI">
+    <div class="brand-item">
+      <a href="#">
+        <img class="brand-item-img" src="img/brand-5.png"  alt="Фирма производителя HITACHI">
       </a>
     </div>
-    <div>
-      <a class="" href="#">
-        <img class="" src="img/brand-6.png"  alt="LG">
+    <div class="brand-item">
+      <a href="#">
+        <img class="brand-item-img" src="img/brand-6.png"  alt="Фирма производителя LG">
       </a>
     </div>
-    <div>
-      <a  class="" href="#">
-        <img class="" src="img/brand-7.png"  alt="AEG">
+    <div class="brand-item">
+      <a href="#">
+        <img class="brand-item-img" src="img/brand-7.png"  alt="Фирма производителя AEG">
       </a>
     </div>
-    <div>
-      <a  class="" href="#">
-        <img class="" src="img/brand-8.png" alt="METABO">
+    <div class="brand-item">
+      <a href="#">
+        <img class="brand-item-img" src="img/brand-8.png" alt="Фирма производителя METABO">
       </a>
     </div>
   </div>
@@ -208,9 +208,9 @@
   </div>
   <div class="services__slider">
     <ul class="services__slider-list">
-     <li>Доставка</li>
-     <li>Гарантия</li>
-     <li>Кредит</li>
+     <li class="services__slider-options">Доставка</li>
+     <li class="services__slider-options">Гарантия</li>
+     <li class="services__slider-options">Кредит</li>
    </ul>
    <div class="services__slider-content">
     <div class="services__slider-item">
@@ -261,7 +261,7 @@
  <h3 class="contacts-title">КОНТАКТЫ</h3>
  <p class="contacts-desc">Вы можете забрать товар сами, <br> 
  заехав в наш офис:</p>
- <a class="contacts-img-link" href="#"><img src="img/contact-map.png" width="300" height="158" alt="Санкт-Петербург, Большая Конюшенная ул., 19"></a>
+ <a class="contacts-img-link" href="#"><img src="img/contact-map.png" width="300" height="158" alt="Адрес нашего офиса Санкт-Петербург, Большая Конюшенная ул., 19"></a>
  <a class="contacts-button"  href="#">Заблудились? НапиШИТЕ НАМ!</a>		
 </section>
 </div>
@@ -300,6 +300,39 @@
 <p class="footer-email">Обратная связь:<a href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
 <p class="footer-dev">Разработано-<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>  			
 </div>
-</footer>   
+</footer>
+<section class="modal-feedback">
+  <h2 class="visually-hidden">Обратная связь</h2>
+  <form class="feedback-form" action="" method="POST"></form>
+  <div class="feedback-form-container">
+    <div class="feedback-user-info">
+      <p class="user-info-field">
+        <label for="feedback-username">Ваше имя:</label>
+        <input type="text" name="feedback-username" placeholder="Представьтесь, пожалуйста" id="feedback-username">
+      </p>
+      <p class="user-info-field">
+        <label for="feedback-email" for="">Ваш email:</label>
+        <input type="text" name="feedback-email" placeholder="Для отправки ответа" id="feedback-email">
+      </p>
+    </div>
+    <p class="feedback-field">
+      <label for="feedback-text">Текст пиьсма:</label>
+      <textarea name="feedback-text" placeholder="В свободной форме" id="feedback-text"></textarea>
+    </p>
+  </div>
+  <div class="feedback-button-box">
+    <button class="feedback-button" type="submit">Отправить</button>
+  </div>
+  <button class="modal-close">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+</section>
+<section class="modal-map">
+  <h2 class="visually-hidden">Карта</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3010840535442!2d30.322092540859853!3d59.93874334728286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1568374328702!5m2!1sru!2sru" width="940" height="446" frameborder="0" allowfullscreen=""></iframe>
+  <button class="modal-close">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+</section>   
 </body>
 </html>
