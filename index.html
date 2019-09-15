@@ -10,8 +10,9 @@
  <header class="site-header">
    <nav class="header-centr">
     <a class="header-logo" href="#">ТЕХНОМАРТ</a> 
-    <form action="search-form" method="POST">
-      <input id="search-input" type="text" placeholder="Поиск:">
+    <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+      <input  type="search" name="search" placeholder="Поиск:" id="search">
+      <label class="visually-hidden" for="search">Поиск по сайту</label>
       <svg class="btn-search-ico"  width="17px"	height="17px"></svg>  
     </form>
     <a  class="bookmarks" href="#">
@@ -303,7 +304,7 @@
 </footer>
 <section class="modal-feedback">
   <h2 class="visually-hidden">Обратная связь</h2>
-  <form class="feedback-form" action="" method="POST"></form>
+  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST"></form>
   <div class="feedback-form-container">
     <div class="feedback-user-info">
       <p class="user-info-field">
