@@ -1,1 +1,724 @@
+@font-face {
+	font-family: "Cuprum";
+	src: url("../fonts/cuprum.woff2") format("woff2"),
+		 url("../fonts/cuprum.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cuprum";
+	src: url("../fonts/cuprumbold.woff2") format("woff2"),
+		 url("../fonts/cuprumbold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cuprum";
+	src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+		 url("../fonts/cuprumitalic.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Cuprum";
+	src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+		 url("../fonts/cuprumbolditalic.woff") format("woff");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	src: url("../fonts/ptsans.woff2") format("woff2"),
+		 url("../fonts/ptsans.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	src: url("../fonts/ptsansbold.woff2") format("woff2"),
+		 url("../fonts/ptsansbold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+body {
+	margin: 0;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 24px;
+    font-family: "PT Sans", Tahoma, Geneva, sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+
+
+/*----------------- Шапка сайта ------------------*/
+
+.site-header {
+	background-color: #f3f7f8;
+}
+
+.header-center {
+	background-color: #293449;
+}
+
+.header-logo {
+	align-items: center;
+	font-size: 24px;
+	line-height: 24px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #ffffff;
+    text-transform: uppercase;
+	background-color: #ee3643;	   
+}
+
+.header-logo:hover {
+	background-color: #ca2c37;
+}
+
+.header-logo:active {
+	background-color: #ba2732;
+}
+
+.search-form {
+
+}
+
+.search-form input {
+    align-items: center;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #000000;
+	background-color: transparent;
+	border: 0;
+}
+
+.search-form:hover {
+	background-color: #212a3a;
+}
+
+.visually-hidden {
+
+}
+
+.search-ico {
+
+}
+
+.bookmarks,
+.basket {
+	align-items: center;
+	font-size: 17px;
+	line-height: 18px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #ffffff;
+}
+
+.bookmarks:hover,
+.basket:hover {
+	background-color: #212a3a;
+}
+
+.bookmarks:active,
+.basket:active {
+	background-color: #161d29;
+	opacity: 0.5;
+}
+
+.basket.active {
+	background-color: #ee3643;
+}
+
+.order-button {
+	align-items: center;
+	font-size: 17px;
+	line-height: 18px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #ffffff;
+	background-color: #63a63e;
+}
+
+.order-button:hover {
+	background-color: #5fbb2d;
+}
+
+.order-button:active {
+	color: rgba(255, 255, 255, 0.5);
+	background-color: #518534;
+}
+ 
+.header-middle {
+
+}
+
+.header-info {
+	font-style: italic;
+	font-size: 16px;
+	line-height: 23px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #ee3643;
+	
+}
+
+.header-address {
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #32425c;
+	
+
+}
+
+.header-phone  {
+	font-size: 21px;
+	line-height: 21px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+		
+}
+
+.header-phone a {
+	color: #ee3643;	
+}
+
+.private-office,
+.private-office-list {
+	list-style: none;
+}
+
+.private-office-input a,
+.private-office-registration a {
+	font-size: 21px;
+	line-height: 21px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+
+}
+
+.private-office a:active  {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.private-office-username {
+
+}
+
+.private-office-username > a {
+	font-size: 21px;
+	line-height: 21px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.private-office-list {
+
+}
+
+.private-office-order a,
+.private-office-cabinet a {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #32425c;
+}
+
+.private-office-cabinet a {
+
+}
+
+nav {
+  
+}
+
+.header-nav-list {
+	list-style: none;
+	background-color: #32425c;
+	border-bottom: 5px solid #293449;
+}
+
+.header-nav-link a {
+	font-size: 17px;
+	line-height: 17px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #ffffff;
+}
+
+
+.header-nav-link:hover a {
+	background-color: #293449;
+}
+
+.header-nav-link:active a {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*------------------- О компании ------------------*/
+
+.two-columns-center {
+
+}
+
+.about-us {
+
+}
+
+.contacts {
+
+}
+
+.about-us-title,
+.contacts-title {
+	font-size: 30px;
+	line-height: 30px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.about-us-desc,
+.contacts-desc {
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 24px;
+	font-family:"PT Sans", Tahoma, Geneva, sans-serif;
+	color: #000000;
+}
+
+.about-us-list {
+	list-style: none;
+}
+
+.about-us-item {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 30px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #000000;
+}
+
+.contacts-button,
+.about-us-button {
+ 	background: none;
+ 	min-height: 38px;
+ 	padding: 10px 20px;
+ 	box-sizing: border-box;
+ 	align-items: center;
+ 	justify-content: center;
+ 	font-weight: normal;
+ 	font-size: 14px;
+ 	line-height: 18px;
+ 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+ 	color: #ffffff;
+ 	text-transform: uppercase;
+ 	background-color: #ee3643;
+ 	border-radius: 3px;
+}
+
+.contacts-button:hover,
+.about-us-button:hover {
+	background-color: #ca2c37;
+}
+
+.contacts-button:active,
+.about-us-button:active {
+	background-color: #ba2732;
+}
+
+
+
+/*---------------- Подвал сайта -----------------*/
+
+footer {
+
+}
+
+.site-footer {
+	background-color: #32425c;
+}
+
+.footer-center {
+
+}
+
+.footer-logo {
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #ee3643;
+	box-shadow: 0px 4px 0px 0px #b52933;
+
+}
+
+.footer-nav-list {
+
+}
+
+.footer-nav-link {
+	list-style: none;
+}
+
+.footer-nav-link a {
+ 	font-weight: normal;
+ 	font-size: 18px;
+ 	line-height: 24px;
+ 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+ 	color: #ffffff;
+}
+
+.footer-middle {
+
+}
+
+.footer-address,
+.footer-phone 	{
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+ 	color: #ffffff;
+}
+
+.footer-nav-catalog {
+	list-style: none;
+}
+
+.footer-nav-item {
+
+}
+
+.footer-nav-item a {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+ 	color: #ffd180;
+}
+
+.footer-nav-item a:hover,
+.footer-nav-link a:hover {
+	text-decoration: underline;
+}
+
+.footer-nav-item a:active,
+.footer-nav-link a:active {
+	text-decoration: none;
+	opacity: 0.3;
+}
+
+.site-footer-bottom {
+	background-color: #293449;
+}
+
+
+.site-footer-bottom .center {
+
+}
+
+.copyright {
+	font-weight: 240px;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #ffffff;
+}
+
+.social-list {
+	list-style: none;
+}
+
+.social-link a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: #212a3a;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+}
+
+.social-link a:hover {
+	background-color: #ee3643;
+}
+
+.social-link.vk a {
+	background-image: url("../img/icon-vk.svg");
+}
+
+.social-link.fb a {
+	background-image: url("../img/icon-fb.svg");
+}
+
+.social-link.insta a {
+	background-image: url("../img/icon-insta.svg");
+}
+
+.footer-email {
+
+}
+
+.footer-email,
+.footer-dev {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #ffffff;
+}
+
+.footer-email a,
+.footer-dev a {
+	color: #ffd180;
+}
+
+.footer-email a:hover,
+.footer-dev a:hover {
+	text-decoration: underline;
+} 
+
+
+.footer-email a:active,
+.footer-dev a:active {
+	color: 	#ee3643;
+	text-decoration: none;
+} 
+
+/*----------------- Обратная связь----------------*/
+ .modal-feedback {
+ 	display: none;
+ } 
+ 
+
+/*------------------ Карта --------------------*/
+.modal-map {
+	display: none;
+}
+/*----------------------------- Хлебные крошки -------------------------------*/
+
+.breadcrumbs-list {
+	list-style: none;
+}
+
+.breadcrumbs-item:not(:last-child) {
+
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+	width: 8px;
+	height: 12px;
+	background-image: url("");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.breadcrumbs-item-home a {
+	width: 14px;
+	height: 12px; 
+	background-image: url("");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.breadcrumbs-item a {
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.catalog-title {
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #32425c;
+	text-transform: uppercase;
+	background-color: #f2f6f8; 
+} 
+/*----------------- Фильтры --------------------*/
+.catalog-filters {
+	margin-right: 20px;
+	width: 220px;
+}
+
+.filters-form {
+
+}
+
+.filters-tittle {
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "PT Sans", Tahoma, Geneva, sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+	background-color: #f7f3ec;
+}
+
+.filters-price,
+.filters-brands,
+.filters-supply {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	margin-bottom: 15px;
+	padding-bottom: 23px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.filters-price-title,
+.filters-brands-tittle,
+.filters-supply-tittle {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 30px;
+	font-family: "PT Sans", Tahoma, Geneva, sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+
+.filters-brands-list,
+.filters-supply-list {
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.filters-brands-list input,
+.filters-supply-list input {
+	display: none;
+}
+
+.filters-button {
+	padding: 0;
+	background: none;
+	width: 140px;
+	height: 38px;
+	justify-content: center;
+	align-items: center;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "PT Sans", Tahoma, Geneva, sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+
+
+
+
+/*------------------------ Каталог товаров ---------------------*/
+
+.catalog-list {
+
+}
+
+
+.catalog-item {
+
+}
+
+.catalog-img-container {
+
+}
+
+.catalog-item-tittle {
+	max-width: 170px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	font-family: "PT Sans", Tahoma, Geneva, sans-serif;
+	color: #000000;
+	
+}
+
+.catalog-old-price {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 18px;
+	font-family: "PT Sans", Tahoma, Geneva, sans-serif;
+	color: #a9a9a9;
+	text-transform: uppercase;
+	text-decoration: line-through;
+}
+
+.catalog-sale-price {
+	width: 100px;
+	height: 38px;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 18px;
+	font-family: "PT Sans", Tahoma, Geneva, sans-serif;
+	color: #ffffff;
+	background-color: #ee3643;	
+}
+
+.buttons-box {
+	
+}
+
+
+.catalog-new-price {
+ 	width: 100px;
+	height: 38px;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 18px;
+	font-family: "PT Sans", Tahoma, Geneva, sans-serif;
+	color: #ffffff;
+	background-color: #ee3643;	
+}
+
+.catalog-button {
+	text-decoration: none;
+	padding: 10px; 
+	box-sizing: border-box;
+	justify-content: center;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	text-transform: uppercase;
+	border-radius: 3px;
+
+}
+
+
 
