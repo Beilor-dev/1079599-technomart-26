@@ -58,7 +58,7 @@ body {
 }
 
 a {
-	text-decoration: none;
+	text-decoration:none;
 }
 
 
@@ -70,24 +70,46 @@ a {
 
 
 
+
+
 /*----------------- Шапка сайта ------------------*/
 
 .site-header {
+	padding-bottom: 60px;
 	background-color: #f3f7f8;
-}
+}	
 
-.header-center {
+.header-top {
+	width: 100%;
+	min-height: 42px;
 	background-color: #293449;
 }
 
+.header-top .center {
+	display: flex;
+	height: 100%;
+	
+}
+
+.center {
+	width: 940px;
+	margin: 0 auto;
+}
+
 .header-logo {
+	display: flex;
+	width: 220px;
+	padding: 9px 20px;
+	box-sizing: border-box; 
 	align-items: center;
+	justify-content: center;
 	font-size: 24px;
 	line-height: 24px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
 	color: #ffffff;
     text-transform: uppercase;
-	background-color: #ee3643;	   
+	background-color: #ee3643;	
+	box-shadow: 0px 4px 0px 0px #9a212a;   
 }
 
 .header-logo:hover {
@@ -99,33 +121,43 @@ a {
 }
 
 .search-form {
-
+	position: relative;
+	display: flex;
+	width: 271px;
+	align-items: center;
 }
 
 .search-form input {
-    align-items: center;
-    font-size: 17px;
-    line-height: 18px;
-    font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 10px 15px 10px 49px;
+	box-sizing: border-box;
+	align-items: center;
+	font-size: 17px;
+	line-height: 18px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
 	color: #000000;
 	background-color: transparent;
-	border: 0;
+	border: 0; 
 }
 
 .search-form:hover {
 	background-color: #212a3a;
 }
 
-.visually-hidden {
-
-}
-
 .search-ico {
-
-}
+	width:;
+	height:;
+	margin:;
+}	
 
 .bookmarks,
 .basket {
+	display: flex;
+	width: 150px;
+	padding: 12px 17px;
+	box-sizing: border-box;
 	align-items: center;
 	font-size: 17px;
 	line-height: 18px;
@@ -144,12 +176,28 @@ a {
 	opacity: 0.5;
 }
 
+.bookmarks-ico {
+	width: ;
+	height: ;
+	margin-right: ;
+}
+
+.basket-ico{
+	width: ;
+	height: ;
+	margin-right: ;
+}
 .basket.active {
 	background-color: #ee3643;
 }
 
 .order-button {
+	display: flex;
+	width: 150px;
+	padding: 12px 17px; 
+	box-sizing: border-box;
 	align-items: center;
+	justify-content: center;
 	font-size: 17px;
 	line-height: 18px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
@@ -167,31 +215,58 @@ a {
 }
  
 .header-middle {
-
+	display: flex;
+	min-height: 158px;
+	padding: 45px 0 30px;
+	box-sizing: border-box;
+	align-items: flex-start;
 }
 
 .header-info {
+	margin: 0;
+	margin-right: 20px;
+	width: 300px;
+	padding: 0 53px;
+	box-sizing: border-box;
+	padding-top: 5px;
 	font-style: italic;
 	font-size: 16px;
 	line-height: 23px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
 	color: #ee3643;
-	
+	text-align: left;
 }
 
+.header-contact {
+	width: 270px;
+	margin-right: auto;
+}
+
+
 .header-address {
+	margin: 0;
 	font-size: 14px;
 	line-height: 24px;
+	font-style: normal;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
 	color: #32425c;
-	
+	text-align: center;
 
 }
 
 .header-phone  {
+	margin: 0;
+	margin-bottom: 5px;
+	display: flex;
+	width: 100%;
+	min-height: 45px;
+	padding: 6px 6px 6px 55px;
+	box-sizing: border-box;
+	align-items: center;  
 	font-size: 21px;
 	line-height: 21px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+
 		
 }
 
@@ -199,30 +274,52 @@ a {
 	color: #ee3643;	
 }
 
-.private-office,
-.private-office-list {
+.user-cabinet-list,
+.login-cabinet-sublist {
+	margin: 0;
+	padding: 0;
 	list-style: none;
+	display: flex;
+	width: 281px;
+	min-height: 45px;
+	justify-content: space-between;
 }
 
-.private-office-input a,
-.private-office-registration a {
+.user-cabinet-item a {
+	display: flex;
+	min-height: 45px;
+	padding: 10px 14px;
+	box-sizing: border-box;
+	align-items: center;
 	font-size: 21px;
 	line-height: 21px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
 	color: #000000;
 	background-color: #ffffff;
-
 }
 
-.private-office a:active  {
+.user-cabinet-item:hover a {
+	color: #ee3643;
+}
+.user-cabinet-item:active a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.private-office-username {
+.user-cabinet-item.input a {
+	width: 121px;
+	margin-right: 10px;
+}
+
+.user-cabinet-item.registration a {
+	width: 150px;
+	justify-content: center;
+}
+
+.login-cabinet-list {
 
 }
 
-.private-office-username > a {
+.login-cabinet-list > a {
 	font-size: 21px;
 	line-height: 21px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
@@ -230,12 +327,13 @@ a {
 	background-color: #ffffff;
 }
 
-.private-office-list {
-
+.login-cabinet-list > a:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 
-.private-office-order a,
-.private-office-cabinet a {
+
+.login-cabinet-subitem a {
+	text-decoration: underline;
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 18px;
@@ -243,21 +341,43 @@ a {
 	color: #32425c;
 }
 
-.private-office-cabinet a {
+.login-cabinet-subitem a:hover {
+	color: #ee3643;
+}
+
+.login-cabinet-subitem a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.login-cabinet-subitem.cabinet {
 
 }
 
-nav {
-  
+.login-cabinet-subitem.cabinet a {
+
 }
+
+
+
 
 .header-nav-list {
+	margin: 0;
+	padding: 0;
 	list-style: none;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
 	background-color: #32425c;
 	border-bottom: 5px solid #293449;
 }
 
 .header-nav-link a {
+	display: flex;
+	min-height: 55px;
+	padding: 16px 31px;
+	box-sizing: border-box;
+	align-items: center;
 	font-size: 17px;
 	line-height: 17px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
@@ -275,20 +395,21 @@ nav {
 
 /*------------------- О компании ------------------*/
 
-.two-columns-center {
-
+.two-columns {
+	display: flex;
+	padding: 80px 0px 85px;
+	justify-content: space-between;
 }
 
 .about-us {
-
-}
-
-.contacts {
-
+	width: 540;
 }
 
 .about-us-title,
 .contacts-title {
+	margin: 0;
+	margin-bottom: 25px;
+	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
@@ -298,6 +419,8 @@ nav {
 
 .about-us-desc,
 .contacts-desc {
+	margin: 0;
+	margin-bottom: 25px;
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 24px;
@@ -306,10 +429,16 @@ nav {
 }
 
 .about-us-list {
+	margin: 0;
+	padding: 0;
 	list-style: none;
+	margin-bottom: 30px;
 }
 
 .about-us-item {
+	position: relative;
+	margin-bottom: 10px;
+	padding-left: 35px;
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 30px;
@@ -317,9 +446,40 @@ nav {
 	color: #000000;
 }
 
+.about-us-item::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 25px;
+	height: 2px;
+	background-color: #ee3643;
+}
+
+.contacts {
+	width: 300px;
+}
+
+.contacts-desc {
+	margin-bottom: 30px;
+}
+
+.contacts-img {
+	margin-bottom: 32px;
+}
+
+.about-us-button {
+	width: 220px;
+}
+
 .contacts-button,
 .about-us-button {
  	background: none;
+ 	border: 0;
+ 	padding: 0;
+ 	display: inline-flex;
  	min-height: 38px;
  	padding: 10px 20px;
  	box-sizing: border-box;
@@ -344,24 +504,48 @@ nav {
 .about-us-button:active {
 	background-color: #ba2732;
 }
+/*---------------- О перфораторах -----------------*/
+.device-info {
+	background-color: #f2f6f8;
+}
 
+.device-info-tittle {
+	margin-bottom: 25px;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 36px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #32425c;
+	text-transform: uppercase;
+}
 
+.device-info-desc {
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 24px;
+	font-family:"PT Sans", Tahoma, Geneva, sans-serif;
+	color: #000000;
+}
 
 /*---------------- Подвал сайта -----------------*/
 
-footer {
-
-}
 
 .site-footer {
 	background-color: #32425c;
 }
 
-.footer-center {
-
+.footer-top {
+	margin-bottom: 35px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .footer-logo {
+	display: inline-flex;
+	width: 240px;
+	height: 64px;
+	justify-content: center;
+	align-items: center;  
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;
@@ -374,11 +558,17 @@ footer {
 }
 
 .footer-nav-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-self: flex-end;
 
 }
 
 .footer-nav-link {
-	list-style: none;
+	margin-right: 60px;
 }
 
 .footer-nav-link a {
@@ -390,24 +580,35 @@ footer {
 }
 
 .footer-middle {
-
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
 }
 
-.footer-address,
-.footer-phone 	{
+.footer-address {
+	margin: 0;
+	width: 380px;
 	font-weight: normal;
+	font-style: normal;
 	font-size: 18px;
 	line-height: 24px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
  	color: #ffffff;
+ 	
+
 }
 
 .footer-nav-catalog {
+	margin: 0;
+	padding: 0;
 	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-self: flex-start;
 }
 
 .footer-nav-item {
-
+	margin-right: 60px;
 }
 
 .footer-nav-item a {
@@ -429,17 +630,22 @@ footer {
 	opacity: 0.3;
 }
 
-.site-footer-bottom {
+.footer-bottom {
 	background-color: #293449;
 }
 
 
-.site-footer-bottom .center {
-
+.footer-bottom .center {
+	display: flex;
+	height: 107px;
+	align-items: center;
 }
 
 .copyright {
-	font-weight: 240px;
+	margin: 0;
+	margin-right: 150px;
+	width: 240px;
+	font-weight: normal;
 	font-size: 16px;
 	line-height: 18px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
@@ -447,7 +653,11 @@ footer {
 }
 
 .social-list {
+	display: flex;
+	
+	padding: 0;
 	list-style: none;
+	margin-right: 120px;
 }
 
 .social-link a {
@@ -476,12 +686,13 @@ footer {
 	background-image: url("../img/icon-insta.svg");
 }
 
-.footer-email {
-
+.footer-email a {
+ 	margin-right: 50px;
 }
 
 .footer-email,
 .footer-dev {
+	margin: 0;
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 18px;
@@ -687,11 +898,6 @@ footer {
 	background-color: #ee3643;	
 }
 
-.buttons-box {
-	
-}
-
-
 .catalog-new-price {
  	width: 100px;
 	height: 38px;
@@ -706,19 +912,91 @@ footer {
 	background-color: #ee3643;	
 }
 
-.catalog-button {
-	text-decoration: none;
-	padding: 10px; 
+.buttons-box {
+	
+}
+
+.catalog-item-button.buy {
+	color: #ffffff;
+	background-color: #63a63e;
+	box-shadow: inset 0px -3px 0px 0px #367315;
+}
+
+.catalog-item-button.buy:hover {
+	background-color: #5fbb2d;
+}
+
+.catalog-item-button.buy:active {
+	background-color: #518534;
+	box-shadow: none;
+}
+
+.catalog-item-button.marker {
+	color: #32425c;
+	background-color: #ffffff;
+	box-shadow: inset 0px 0px 0px 3px #63a63e;
+}
+
+.catalog-item-button.marker:hover {
+	box-shadow: inset 0px 0px 0px 3px #32425c;	
+}
+
+.catalog-item-button.marker:active {
+	opacity: 0.3;	
+}
+
+.catalog-item-button {
+
 	box-sizing: border-box;
 	justify-content: center;
+	align-items: ;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 18px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
 	text-transform: uppercase;
-	border-radius: 3px;
-
 }
+
+/*------------------- Пагинация ------------------*/
+
+.pagination {
+	margin-bottom: 60px;
+}
+
+.pagination-list {
+	display: flex;
+	list-style: none;
+}
+
+.pagination-item.disabled {
+	display: none;
+}
+
+.pagination-item:not(:last-child) {
+	margin-right: 10px;
+}
+
+
+.pagination-button a {
+	padding: 0px 30px;
+}
+
+.pagination-item a { 
+	display:flex;
+	min-width: 38px;
+	height: 38px;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: center;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+ }
+ 
 
 
 
