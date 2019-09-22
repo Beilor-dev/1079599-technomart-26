@@ -46,7 +46,6 @@
 	font-style: normal;
 }
 
-
 body {
 	margin: 0;
 	font-weight: normal;
@@ -191,6 +190,11 @@ a {
 	background-color: #ee3643;
 }
 
+.basket.active:hover {
+	background-color: #212a3a;
+}
+
+
 .order-button {
 	display: flex;
 	width: 150px;
@@ -266,6 +270,7 @@ a {
 	font-size: 21px;
 	line-height: 21px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	border: 3px solid #ffffff;
 
 		
 }
@@ -275,7 +280,7 @@ a {
 }
 
 .user-cabinet-list,
-.login-cabinet-sublist {
+.login-cabinet-list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -316,10 +321,26 @@ a {
 }
 
 .login-cabinet-list {
-
+ 	width: 299px;
 }
 
-.login-cabinet-list > a {
+.login-cabinet-item.username {
+	display: flex;
+	width: 100%;
+	justify-content: space;
+	flex-wrap: wrap;
+}
+
+.login-cabinet-item.username > a:nth-of-type(1) {
+	padding-left: 13px;
+	flex-grow: 1;
+}
+
+.login-cabinet-item > a {
+	display: flex;
+	min-height: 45px;
+	box-sizing: border-box;
+	align-items: center;
 	font-size: 21px;
 	line-height: 21px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
@@ -327,10 +348,19 @@ a {
 	background-color: #ffffff;
 }
 
-.login-cabinet-list > a:active {
+.login-cabinet-list a:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.login-cabinet-sublist {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 5px;
+	margin-left: 18px;
+	display: flex;   
+
+}
 
 .login-cabinet-subitem a {
 	text-decoration: underline;
@@ -338,7 +368,7 @@ a {
 	font-size: 16px;
 	line-height: 18px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
-	color: #32425c;
+	color: rgb(50, 66, 92);
 }
 
 .login-cabinet-subitem a:hover {
@@ -350,11 +380,26 @@ a {
 }
 
 .login-cabinet-subitem.cabinet {
-
+	margin-left: 16px;
 }
 
 .login-cabinet-subitem.cabinet a {
+	position: relative;
+	padding-left: 16px;
+}
 
+.login-cabinet-subitem.cabinet a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	display: block;
+	width: 4px;
+	height: 4px;
+	background-color: #32425c;
+	border-radius: 50%; 	
 }
 
 
@@ -402,7 +447,7 @@ a {
 }
 
 .about-us {
-	width: 540;
+	width: 540px;
 }
 
 .about-us-title,
@@ -426,6 +471,10 @@ a {
 	line-height: 24px;
 	font-family:"PT Sans", Tahoma, Geneva, sans-serif;
 	color: #000000;
+}
+
+.about-us-desc:last-of-type {
+	margin-bottom: 15px;
 }
 
 .about-us-list {
@@ -474,6 +523,10 @@ a {
 	width: 220px;
 }
 
+.contacts-button{
+	width: 300px;
+}
+
 .contacts-button,
 .about-us-button {
  	background: none;
@@ -504,12 +557,17 @@ a {
 .about-us-button:active {
 	background-color: #ba2732;
 }
+
+
+
 /*---------------- О перфораторах -----------------*/
 .device-info {
+	padding: 60px 0 68px;
 	background-color: #f2f6f8;
 }
 
 .device-info-tittle {
+	margin: 0;
 	margin-bottom: 25px;
 	font-weight: normal;
 	font-size: 30px;
@@ -520,6 +578,7 @@ a {
 }
 
 .device-info-desc {
+	margin: 0px; 
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 24px;
@@ -542,7 +601,7 @@ a {
 
 .footer-logo {
 	display: inline-flex;
-	width: 240px;
+	width: 220px;
 	height: 64px;
 	justify-content: center;
 	align-items: center;  
@@ -560,8 +619,8 @@ a {
 .footer-nav-list {
 	margin: 0;
 	padding: 0;
-	display: flex;
 	list-style: none;
+	display: flex;
 	justify-content: space-between;
 	align-self: flex-end;
 
@@ -570,6 +629,12 @@ a {
 .footer-nav-link {
 	margin-right: 60px;
 }
+
+.footer-nav-link:last-child {
+	margin-right: 0;
+}
+
+
 
 .footer-nav-link a {
  	font-weight: normal;
@@ -582,11 +647,13 @@ a {
 .footer-middle {
 	margin-bottom: 50px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 
-.footer-address {
+.footer-contact address,
+.footer-contact a {
 	margin: 0;
+	padding: 0;  
 	width: 380px;
 	font-weight: normal;
 	font-style: normal;
@@ -594,9 +661,12 @@ a {
 	line-height: 24px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
  	color: #ffffff;
- 	
+ }
 
-}
+ .footer-contact p {
+ 	margin: 0;
+	padding: 0; 
+ }
 
 .footer-nav-catalog {
 	margin: 0;
@@ -610,6 +680,11 @@ a {
 .footer-nav-item {
 	margin-right: 60px;
 }
+
+.footer-nav-item:last-child {
+	margin-right: 0;
+}
+
 
 .footer-nav-item a {
 	font-weight: normal;
@@ -654,10 +729,14 @@ a {
 
 .social-list {
 	display: flex;
-	
+	margin: 0; 
 	padding: 0;
 	list-style: none;
 	margin-right: 120px;
+}
+
+.social-link:not(:last-child) {
+	margin-right: 5px;
 }
 
 .social-link a {
@@ -731,24 +810,38 @@ a {
 
 .breadcrumbs-list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	height: 59px
+	align-items: center; 	
 }
 
 .breadcrumbs-item:not(:last-child) {
+	position: relative;
+	margin-right: 40px;
 
 }
 
-.breadcrumbs-item:not(:last-child)::after {
-	width: 8px;
-	height: 12px;
+.breadcrumbs-item-home a {
+	display: block;
+	width: 14px;
+	height: 12px; 
 	background-image: url("");
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
-
-.breadcrumbs-item-home a {
-	width: 14px;
-	height: 12px; 
+.breadcrumbs-item:not(:last-child)::after {
+	content: "";
+	position: absolute;
+	right:; 
+	top:;
+	bottom:;
+	margin: auto; 
+	width: 8px;
+	height: 12px;
 	background-image: url("");
 	background-position: center;
 	background-repeat: no-repeat;
