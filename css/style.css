@@ -925,7 +925,8 @@ a {
 .favorite-centr-button,
 .brand-centr-button,
 .contacts-button,
-.about-us-button {
+.about-us-button,
+.feedback-button {
 	background: none;
 	border: 0;
 	padding: 0;
@@ -1194,14 +1195,139 @@ a {
 } 
 
 /*----------------- Обратная связь----------------*/
-.modal-feedback {
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+
 	display: none;
+	box-sizing: border-box;
+
+	box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75) 
+}
+
+.modal-feedback {
+	width: 620px;
+	height: 430px;
+
+	border-top: 7px solid #ff5357;
 } 
 
+.modal.active {
+	display: block;
+}
+
+.feedback-form-container {
+	width: 100%;
+	height: 311px;
+	padding: 45px 80px 37px;
+	box-sizing: border-box;
+
+	background-color: #ffffff;
+}
+
+.feedback-user-info {
+	margin-bottom: 20px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.user-info-field {
+	margin: 0;
+
+	width: 220px;
+}
+
+.feedback-username label {
+	margin-bottom: 10px;
+
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 18px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #000000;
+}
+
+.user-info-field input {
+	padding: 0;
+	background: none;
+	border: 0;
+	display: flex;
+	
+	width: 100%;
+	height: 38px;
+	padding: 10px 16px;
+	box-sizing: border-box;
+
+	border: 2px solid #dee3e4;
+	border-radius: 3px;
+}
+
+.feedback-field {
+	margin: 0;
+}
+
+.feedback-form textarea {
+	padding: 0;
+	background: none;
+	border: 0;
+
+	display: flex;
+	width: 100%;
+	height: 114px;
+	padding: 10px 16px;
+	box-sizing: border-box;
+
+	border: 2px solid #dee3e4;
+	border-radius: 3px;
+}
+
+.feedback-button-box {
+	display: flex;
+	width: 100%;
+	height: 112px;
+	align-items: center;
+	justify-content: center;
+
+	background-color:#f4f4f4;
+}
+
+.feedback-button {
+	width: 460px;
+}
+
+.modal-close {
+	padding: 0;
+	border: 0;
+	background: none;
+
+	position: absolute;
+	top: 16px;
+	right: 9px;
+
+	display: block;
+	width: 21px;
+	height: 21px;
+
+	background-image: url("../img/icon-close.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
 
 /*------------------ Карта --------------------*/
 .modal-map {
-	display: none;
+	width: 940px;
+	height: 446px;
+	background-image: url("../img/map-bg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.5)
 }
 /*----------------------------- Хлебные крошки -------------------------------*/
 
@@ -1270,6 +1396,7 @@ a {
 /*----------------- Фильтры --------------------*/
 .catalog-filters {
 	margin-right: 20px;
+
 	width: 220px;
 }
 
@@ -1278,13 +1405,24 @@ a {
 }
 
 .filters-tittle {
+	margin-bottom: 10px;
+
+	display: flex;
+	width: 100%;
+	height: 38px;
+	padding: 0px 18px;
+	box-sizing: border-box;
+	align-items: center;
+
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
 	font-family: "PT Sans", Tahoma, Geneva, sans-serif;
 	color: #000000;
 	text-transform: uppercase;
+
 	background-color: #f7f3ec;
+	border-radius: 3px;
 }
 
 .filters-price,
@@ -1293,7 +1431,9 @@ a {
 	padding: 0;
 	margin: 0;
 	border: 0;
+
 	margin-bottom: 15px;
+
 	padding-bottom: 23px;
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -1302,6 +1442,7 @@ a {
 .filters-brands-tittle,
 .filters-supply-tittle {
 	margin-bottom: 15px;
+
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 30px;
@@ -1310,6 +1451,88 @@ a {
 	text-transform: uppercase;
 	
 }
+
+.filters-price-control {
+	margin-bottom: 9px;
+
+	display: flex;
+	height: 80px;
+	padding: 20px;
+	box-sizing: border-box;
+	align-items: center;
+
+	background-color: #f7f3ec;
+	background-image: linear-gradient(#d7dcde, #d7dcde);
+	background-position: center;
+	background-size: 180px 2px;
+	background-repeat: no-repeat;
+	border-radius: 3px;
+}
+
+.filters-price-range {
+	width: 120px;
+	height: 2px;
+	background-color: #00ca74;
+}
+
+.filters-price-button {
+	padding: 0;
+	background: none;
+
+	width: 20px;
+	height: 20px;
+	box-sizing: border-box;
+
+	background-color: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0px 2px 0px 0px #e0ddd8;
+}
+
+.filters-price-input {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+.filters-price-input input {
+	padding: 0;
+	border: 0;
+	background: none;
+
+	width: 95px;
+	height: 38px;
+	box-sizing: border-box;
+
+	font-weight: normal;
+	font-size: 17px; 
+	line-height: 18px;
+	font-family: "PT Sans", Tahoma, Geneva, sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: #f7f3ec
+	border-radius: 3px;
+}
+
+.filters-price-input::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin:auto;
+	width: 10px;
+	height: 1px;
+	background-color: #444444;
+}
+
+
 
 .filters-brands-list,
 .filters-supply-list {
@@ -1407,8 +1630,98 @@ a {
 	border-radius: 3px;
 }
 
+/*------------------------ Сортировка ---------------------*/
 
+.catalod-sort {
+	margin-bottom: 20px;
 
+	display: flex;
+	width: 100%;
+	height: 38px;
+	padding: 0px 18px;
+	box-sizing: border-box;
+	align-items: center;
+
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 15px;
+	font-family: "PT Sans", Tahoma, Geneva, sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #f7f3ec;
+	border-radius: 3px;
+}
+
+.sort-tittle {
+	margin-right: auto;
+
+	font-weight: normal;
+	color: #000000;
+}
+
+.sort-type-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	margin-right: 46px;
+
+	display: flex;
+	width: 355px;
+	justify-content: space-between; 
+}
+
+.sort-type-item a {
+	color: rgba(0, 0, 0, 0.3);
+
+	border-bottom: 1px dotted #ee3643;
+}
+
+.sort-type-item a:hover {
+	color: #000000;
+}	
+
+.sort-type-item a:active {
+	color: #ee3643;
+
+	border-bottom: none;
+}
+
+.sort-direction-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	display: flex;
+	width: 43px;
+	justify-content: space-between; 
+}
+
+.sort-direction-item a {
+	display: block;
+	width: 0;
+	height: 0;
+
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+}
+
+.sort-direction-item.up a {
+	border-bottom: 10px solid #c5c5c5;
+}
+
+.sort-direction-item.down a {
+	border-top: 10px solid #c5c5c5;
+}
+
+.sort-direction-item.up.current a {
+	border-bottom: 10px solid #ee3643;
+}
+
+.sort-direction-item.down.current a {
+	border-top: 10px solid #ee3643;
+}
 
 /*------------------------ Каталог товаров ---------------------*/
 .catalog-container {
