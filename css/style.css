@@ -438,6 +438,84 @@ a {
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
+/*---------------- Особенности магазина ------------*/
+
+.variation {
+	padding: 60px 0px 53px;
+	font-size: 0;
+}
+
+.variation-block {
+	position: relative;
+	margin-right: 20px;
+	margin-bottom: 20px;
+
+	display: inline-flex;
+	width: 300px;
+	min-height: 123px;
+	padding: 13px 25px;
+	box-sizing: border-box;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+
+	background-color: #ffbf47;
+	background-repeat: no-repeat;
+}
+
+.block-item-tittle {
+	margin: 0;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
+	color: #ffffff;
+}
+
+.variation-block:nth-of-type(n + 3) {
+	margin-right: 0;
+}
+
+.variation-block:last-of-type {
+	margin-bottom: 0;
+}
+
+.features-item-button {
+	width:;
+
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.features-item-button:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.features-item-button:active {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.variation-block.materilas {
+	background-color: #ffbf47;
+	background-image: url("");
+	background-position: ;
+}
+
+.variation-block.insruments {
+	background-color: #3bbce3;
+	background-image: url("");
+	background-position: ;
+}
+
+.variation-block.technic {
+	background-color: #dc91d8;
+	background-image: url("");
+	background-position: ;
+}
+
+
+
 /*---------------- Популярные товары ------------*/
 
 .favorite {
@@ -474,6 +552,8 @@ a {
 
 .favorite-centr-button {
 	width: 253px;
+
+
 }
 
 .favorite-centr-button:hover {
@@ -922,6 +1002,7 @@ a {
 	width: 300px;
 }
 
+.features-item-button,
 .favorite-centr-button,
 .brand-centr-button,
 .contacts-button,
