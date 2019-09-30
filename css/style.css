@@ -272,7 +272,6 @@ a {
 .header-info {
 	margin: 0;
 	margin-right: 20px;
-
 	width: 300px;
 	padding: 0 53px;
 	box-sizing: border-box;
@@ -301,17 +300,15 @@ a {
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
 	color: #32425c;
 	text-align: center;
-
 }
 
 .header-phone  {
 	margin: 0;
 	margin-bottom: 5px;
-
 	display: flex;
 	width: 100%;
 	min-height: 45px;
-	padding: 6px 6px 6px 50px;
+	padding: 6px 6px 6px 53px;
 	box-sizing: border-box;
 	align-items: center;  
 
@@ -323,9 +320,7 @@ a {
 	background-color: transparent;
 	background-image: url("../img/icon-phone.svg");
 	background-position: 12px center;
-	background-repeat: no-repeat; 
-
-	
+	background-repeat: no-repeat; 	
 }
 
 .header-phone a {
@@ -336,12 +331,12 @@ a {
 .login-cabinet-list {
 	margin: 0;
 	padding: 0;
-	list-style: none;
-
 	display: flex;
 	width: 281px;
 	min-height: 45px;
 	justify-content: space-between;
+
+	list-style: none;
 }
 
 .user-cabinet-item a {
@@ -380,6 +375,7 @@ a {
 	width: 299px;
 }
 
+.login-ico,
 .login-icon {
 	margin-right: 14px;
 	width: 20px;
@@ -387,6 +383,34 @@ a {
 
 	fill: #c5c5c5;
 }
+
+.user-ico {
+	width: 20px;
+	height: 18px;
+
+	fill: #c5c5c5;
+}
+
+.login-cabinet-item.username .user-ico {
+	margin-right: 14px;
+}
+
+.login-cabinet-item.username .login-ico {
+	padding-right: 10px;
+}
+
+.login-cabinet-item a:hover svg {
+	fill: #32425c;
+}
+
+.login-cabinet-item a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.login-cabinet-item a:active svg {
+	fill: #c5c5c5;
+}
+
 
 .user-cabinet-item:hover .login-icon {
 	fill: #32425c;
@@ -399,7 +423,7 @@ a {
 .login-cabinet-item.username {
 	display: flex;
 	width: 100%;
-	justify-content: space;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
@@ -430,7 +454,6 @@ a {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-
 	margin-top: 5px;
 	margin-left: 18px;
 	display: flex;   
@@ -460,6 +483,7 @@ a {
 
 .login-cabinet-subitem.cabinet a {
 	position: relative;
+
 	padding-left: 16px;
 }
 
@@ -480,14 +504,10 @@ a {
 	border-radius: 50%; 	
 }
 
-
-
-
 .header-nav-list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-
 	display: flex;
 	width: 100%;
 	justify-content: center;
@@ -528,9 +548,9 @@ a {
 
 .variation-block {
 	position: relative;
+
 	margin-right: 20px;
 	margin-bottom: 20px;
-
 	display: inline-flex;
 	width: 300px;
 	min-height: 123px;
@@ -632,9 +652,9 @@ a {
 
 .variation-block__slider {
 	position: relative;
+
 	float: left;
 	margin-right: 20px;
-
 	width: 620px;
 	height: 266px;
 }
@@ -651,7 +671,6 @@ a {
 
 .favorite-tittle-container {
 	margin-bottom: 20px;
-
 	display: flex;
 	width: 100%;
 	height: 89px;
@@ -692,8 +711,8 @@ a {
 
 .favorite-item {
 	position: relative;
-	margin-right: 20px;
 
+	margin-right: 20px;
 	display: flex;
 	width: 220px;
 	min-height: 318px;
@@ -702,6 +721,7 @@ a {
 	flex-direction: column;
 	align-items: center;
 	overflow: hidden;
+
 	border: 1px solid #eaeaea;
 }
 
@@ -794,8 +814,8 @@ a {
 
 .favorite-new-price {
 	position: relative;
-	margin-top: auto;
 
+	margin-top: auto;
 	display: inline-flex;
 	width: 100px;
 	height: 38px;
@@ -835,6 +855,7 @@ a {
 	position: absolute;
 	left: -20px;
 	top: 0;
+
 	display: block;
 	width: 20px;
 	height: 38px;
@@ -954,7 +975,6 @@ a {
 
 .brand-centr-container {
 	margin-bottom: 20px;
-
 	display: flex;
 	width: 100%;
 	height: 89px;
@@ -994,7 +1014,6 @@ a {
 .brand-item {
 	margin-right: 20px;
 	margin-bottom: 20px;
-
 	display: flex;
 	width: 220px;
 	min-height: 145px;
@@ -1054,6 +1073,7 @@ a {
 .contacts-title {
 	margin: 0;
 	margin-bottom: 25px;
+
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;
@@ -1066,6 +1086,7 @@ a {
 .contacts-desc {
 	margin: 0;
 	margin-bottom: 25px;
+
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 24px;
@@ -1080,14 +1101,17 @@ a {
 .about-us-list {
 	margin: 0;
 	padding: 0;
-	list-style: none;
 	margin-bottom: 30px;
+
+	list-style: none;
 }
 
 .about-us-item {
 	position: relative;
+
 	margin-bottom: 10px;
 	padding-left: 35px;
+
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 30px;
@@ -1097,13 +1121,16 @@ a {
 
 .about-us-item::before{
 	content: "";
+
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	margin: auto;
+
 	width: 25px;
 	height: 2px;
+
 	background-color: #ee3643;
 }
 
@@ -1133,8 +1160,6 @@ a {
 .contacts-button,
 .about-us-button,
 .feedback-button {
-	background: none;
-	border: 0;
 	padding: 0;
 	display: inline-flex;
 	min-height: 38px;
@@ -1142,12 +1167,16 @@ a {
 	box-sizing: border-box;
 	align-items: center;
 	justify-content: center;
+
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 18px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
 	color: #ffffff;
 	text-transform: uppercase;
+
+	background: none;
+	border: 0;
 	background-color: #ee3643;
 	border-radius: 3px;
 }
@@ -1173,6 +1202,7 @@ a {
 .device-info-tittle {
 	margin: 0;
 	margin-bottom: 25px;
+
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 36px;
@@ -1183,6 +1213,7 @@ a {
 
 .device-info-desc {
 	margin: 0px; 
+
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 24px;
@@ -1208,13 +1239,15 @@ a {
 	width: 220px;
 	height: 64px;
 	justify-content: center;
-	align-items: center;  
+	align-items: center; 
+
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
 	color: #ffffff;
 	text-transform: uppercase;
+
 	background-color: #ee3643;
 	box-shadow: 0px 4px 0px 0px #b52933;
 
@@ -1224,6 +1257,7 @@ a {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+
 	display: flex;
 	justify-content: space-between;
 	align-self: flex-end;
@@ -1259,6 +1293,7 @@ a {
 	margin: 0;
 	padding: 0;  
 	width:;
+
 	font-weight: normal;
 	font-style: normal;
 	font-size: 18px;
@@ -1276,6 +1311,7 @@ a {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+
 	display: flex;
 	justify-content: space-between;
 	align-self: flex-start;
@@ -1324,6 +1360,7 @@ a {
 	margin: 0;
 	margin-right: 150px;
 	width: 240px;
+
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 18px;
@@ -1347,6 +1384,7 @@ a {
 	display: block;
 	width: 40px;
 	height: 40px;
+
 	background-color: #212a3a;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1376,6 +1414,7 @@ a {
 .footer-email,
 .footer-dev {
 	margin: 0;
+
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 18px;
@@ -1396,8 +1435,10 @@ a {
 
 .footer-email a:active,
 .footer-dev a:active {
-	color: 	#ee3643;
 	text-decoration: none;
+
+	color: 	#ee3643;
+	
 } 
 
 /*----------------- Обратная связь----------------*/
@@ -1408,8 +1449,8 @@ a {
 	left: 0;
 	right: 0;
 	bottom: 0;
+	
 	margin: auto;
-
 	display: none;
 	box-sizing: border-box;
 
@@ -1438,14 +1479,12 @@ a {
 
 .feedback-user-info {
 	margin-bottom: 20px;
-
 	display: flex;
 	justify-content: space-between;
 }
 
 .user-info-field {
 	margin: 0;
-
 	width: 220px;
 }
 
@@ -1463,10 +1502,11 @@ a {
 	padding: 0;
 	background: none;
 	border: 0;
-	display: flex;
 	
+	display: flex;
 	width: 100%;
 	height: 38px;
+	padding: 0;
 	padding: 10px 16px;
 	box-sizing: border-box;
 
@@ -1530,6 +1570,7 @@ a {
 .modal-map {
 	width: 940px;
 	height: 446px;
+
 	background-image: url("../img/map-bg.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1541,6 +1582,7 @@ a {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+
 	display: flex;
 	height: 59px;
 	align-items: center;	
@@ -1554,13 +1596,16 @@ a {
 
 .breadcrumbs-item:not(:last-child)::after {
 	content: "";
+
 	position: absolute;
 	right: -24px; 
 	top: 0;
 	bottom: 0;
 	margin: auto; 
+
 	width: 8px;
 	height: 12px;
+
 	background-image: url("../img/icon-right-small.svg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1570,6 +1615,7 @@ a {
 	display: block;
 	width: 14px;
 	height: 12px; 
+
 	background-image: url("../img/icon-home.svg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1591,18 +1637,19 @@ a {
 	padding: 0 30px;
 	box-sizing: border-box;
 	align-items: center;
+
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
 	color: #32425c;
 	text-transform: uppercase;
+
 	background-color: #f2f6f8; 
 } 
 /*----------------- Фильтры --------------------*/
 .catalog-filters {
 	margin-right: 20px;
-
 	width: 220px;
 }
 
@@ -1612,7 +1659,6 @@ a {
 
 .filters-tittle {
 	margin-bottom: 10px;
-
 	display: flex;
 	width: 100%;
 	height: 38px;
@@ -1637,9 +1683,7 @@ a {
 	padding: 0;
 	margin: 0;
 	border: 0;
-
 	margin-bottom: 15px;
-
 	padding-bottom: 23px;
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -1660,7 +1704,6 @@ a {
 
 .filters-price-control {
 	margin-bottom: 9px;
-
 	display: flex;
 	height: 80px;
 	padding: 20px;
@@ -1678,17 +1721,18 @@ a {
 .filters-price-range {
 	width: 120px;
 	height: 2px;
+
 	background-color: #00ca74;
 }
 
 .filters-price-button {
 	padding: 0;
-	background: none;
-
+	
 	width: 20px;
 	height: 20px;
 	box-sizing: border-box;
 
+	background: none;
 	background-color: #ababab;
 	border: 8px solid #ffffff;
 	border-radius: 50%;
@@ -1706,9 +1750,7 @@ a {
 
 .filters-price-input input {
 	padding: 0;
-	border: 0;
 	background: none;
-
 	width: 95px;
 	height: 38px;
 	box-sizing: border-box;
@@ -1721,20 +1763,24 @@ a {
 	text-transform: uppercase;
 	text-align: center;
 
-	background-color: #f7f3ec
+	background-color: #f7f3ec;
+	border: 0;
 	border-radius: 3px;
 }
 
 .filters-price-input::after {
 	content: "";
+
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
+
 	margin:auto;
 	width: 10px;
 	height: 1px;
+
 	background-color: #444444;
 }
 
@@ -1744,6 +1790,7 @@ a {
 .filters-supply-list {
 	padding: 0;
 	margin: 0;
+
 	list-style: none;
 	text-transform: uppercase;
 }
@@ -1762,8 +1809,8 @@ a {
 	display: flex;
 	height: 25px;
 	align-items: center;
-
 	padding-left: 35px;
+
 	font-weight: normal;
 	font-size: 15px;
 	line-height: 20px;
@@ -1784,7 +1831,6 @@ a {
 .filters-supply {
 	padding: 0;
 	border: 0;
-
 	margin-bottom: 75px;
 }
 
@@ -1792,8 +1838,8 @@ a {
 	display: flex;
 	height: 25px;
 	align-items: center;
-	
 	padding-left: 35px;
+
 	font-weight: normal;
 	font-size: 15px;
 	line-height: 20px;
@@ -1815,9 +1861,6 @@ a {
 
 .filters-button {
 	padding: 0;
-	border: 0;
-	background: none;
-
 	display: flex;
 	width: 140px;
 	height: 38px;
@@ -1831,7 +1874,9 @@ a {
 	color: #000000;
 	text-transform: uppercase;
 	
+	background: none;
 	background-color: #ffffff;
+	border: 0;
 	border: 1px solid #e5e5e5;
 	border-radius: 3px;
 }
@@ -1840,7 +1885,6 @@ a {
 
 .catalod-sort {
 	margin-bottom: 20px;
-
 	display: flex;
 	width: 100%;
 	height: 38px;
@@ -1869,9 +1913,9 @@ a {
 .sort-type-list{
 	margin: 0;
 	padding: 0;
-	list-style: none;
-
 	margin-right: 46px;
+
+	list-style: none;
 
 	display: flex;
 	width: 355px;
@@ -1897,18 +1941,17 @@ a {
 .sort-direction-list {
 	margin: 0;
 	padding: 0;
-	list-style: none;
-
 	display: flex;
 	width: 43px;
 	justify-content: space-between; 
+
+	list-style: none;
 }
 
 .sort-direction-item a {
 	display: block;
 	width: 0;
 	height: 0;
-
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 }
@@ -1956,6 +1999,7 @@ a {
 	flex-direction: column;
 	align-items: center;
 	overflow: hidden;
+
 	border: 1px solid #eaeaea;
 }
 
@@ -1998,6 +2042,7 @@ a {
 	margin: 0;
 	margin-bottom: 10px;
 	max-width: 170px;
+
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 20px;
@@ -2010,6 +2055,7 @@ a {
 .catalog-old-price {
 	margin: 0;
 	margin-bottom: 10px;
+
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 18px;
@@ -2030,11 +2076,13 @@ a {
 	box-sizing: border-box;
 	justify-content: center;
 	align-items: center;
+
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 18px;
 	font-family: "PT Sans", Tahoma, Geneva, sans-serif;
 	color: #ffffff;
+
 	background-color: #ee3643;	
 }
 
@@ -2063,12 +2111,15 @@ a {
 
 .catalog-sale-price::after {
 	content: "";
+
 	position: absolute;
 	right: -20px;
 	top: 0;
+
 	display: block;
 	width: 0;
 	height: 0;
+
 	border-left: 20px solid #ee3643;
 	border-top: 19px solid transparent;
 	border-bottom: 19px solid transparent;
@@ -2076,12 +2127,15 @@ a {
 
 .catalog-sale-price::before {
 	content: "";
+
 	position: absolute;
 	left: -20px;
 	top: 0;
+
 	display: block;
 	width: 20px;
 	height: 38px;
+
 	background-color: #ee3643;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
@@ -2107,7 +2161,7 @@ a {
 	background-color: #ffffff;
 }
 
- .catalog-item-button {
+.catalog-item-button {
 	display: inline-flex;
 	width: 135px;
 	min-height: 38px;
@@ -2122,12 +2176,11 @@ a {
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
 
 	border-radius: 3px; 
- }	
+}	
 
 .catalog-item-button.buy {
 	position: relative;
 	margin-bottom: 10px;
-
 	padding-left: 14px;
 
 	color: #ffffff;
@@ -2143,8 +2196,8 @@ a {
 	left: 12px;
 	top: 0;
 	bottom: 0;
-	margin: auto;
 
+	margin: auto;
 	width: 15px;
 	height: 15px;
 
@@ -2200,6 +2253,7 @@ a {
 	display: flex;
 	margin: 0;
 	padding: 0; 
+
 	list-style: none;
 }
 
@@ -2222,12 +2276,14 @@ a {
 	box-sizing: border-box;
 	align-items: center;
 	justify-content: center;
+
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
 	font-family: "PT Sans", Tahoma, Geneva, sans-serif;
 	color: #000000;
 	text-transform: uppercase;
+
 	background-color: #ffffff;
 	border: 1px solid #e5e5e5;
 	border-radius: 3px;
@@ -2236,6 +2292,7 @@ a {
 
 .pagination-item.current a {
 	color: #ffffff;
+
 	background-color: #ee3643;
 	border: none;
 }
