@@ -375,7 +375,7 @@ a {
 	width: 299px;
 }
 
-.login-ico,
+
 .login-icon {
 	margin-right: 14px;
 	width: 20px;
@@ -383,6 +383,17 @@ a {
 
 	fill: #c5c5c5;
 }
+
+.just-ico {
+	margin-right: 14px;
+	width: 20px;
+	height: 17px;
+
+	fill: #c5c5c5;
+}
+
+
+
 
 .user-ico {
 	width: 20px;
@@ -1159,7 +1170,9 @@ a {
 .brand-centr-button,
 .contacts-button,
 .about-us-button,
-.feedback-button {
+.feedback-button,
+.basket-button,
+.continue-button {
 	padding: 0;
 	display: inline-flex;
 	min-height: 38px;
@@ -1449,6 +1462,7 @@ a {
 	left: 0;
 	right: 0;
 	bottom: 0;
+	z-index: 2;
 	
 	margin: auto;
 	display: none;
@@ -1576,6 +1590,53 @@ a {
 	background-repeat: no-repeat;
 	box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.5)
 }
+
+/*------------------ Оформление заказа --------------------*/
+
+.modal-purchases {
+	width: 610px;
+	height: 220px;
+
+	border-top: 7px solid #ff5357;
+    background-color: #f4f4f4;
+}
+
+.purchases-form-container {
+	padding: 55px 80px 37px;
+
+	background-color: #ffffff;
+
+}
+
+.basket-button-box {
+	display: flex;
+	width: 100%;
+	height: 112px;
+	align-items: center;
+	justify-content: center;
+}
+
+.purchases-info-field {
+
+}
+
+.basket-button, 
+.continue-button {
+	margin-right: 10px;
+    width: 220px;
+}
+
+.basket-button {
+
+}
+
+.continue-button {
+	margin-right: 10px;
+	
+}
+
+
+
 /*----------------------------- Хлебные крошки -------------------------------*/
 
 .breadcrumbs-list {
@@ -1807,7 +1868,7 @@ a {
 
 .filters-brands-item  {
 	display: flex;
-	height: 25px;
+	height: 23px;
 	align-items: center;
 	padding-left: 35px;
 
@@ -1823,8 +1884,9 @@ a {
 	background-repeat: no-repeat;
 }
 
-.filters-brands-item input:checked + .filters-brands-decs {
-	background-image: url("../img/checkbox-on.svg");
+.filters-brands-item input:checked + .filters-brands-desc {
+    background-image: url("../img/checkbox-on.svg");
+
 }
 
 
@@ -1855,7 +1917,7 @@ a {
 
 
 .filters-supply-item input:checked + .filters-supply-desc {
-	background-image: url(../img/radio-on.svg);
+	background-image: url("../img/radio-on.svg");
 }
 
 
@@ -1922,6 +1984,13 @@ a {
 	justify-content: space-between; 
 }
 
+.sort-type-item:first-child a {
+	color:#ee3643;
+
+	border-bottom: none;
+}
+
+
 .sort-type-item a {
 	color: rgba(0, 0, 0, 0.3);
 
@@ -1930,6 +1999,8 @@ a {
 
 .sort-type-item a:hover {
 	color: #000000;
+
+	border-bottom: 1px solid #ee3643;
 }	
 
 .sort-type-item a:active {
@@ -1956,8 +2027,8 @@ a {
 	border-right: 5px solid transparent;
 }
 
-.sort-direction-item.up a {
-	border-bottom: 10px solid #c5c5c5;
+.sort-direction-item.up.current.red a:active {
+	border-bottom: 10px solid #ee3643;
 }
 
 .sort-direction-item.down a {
@@ -1968,8 +2039,16 @@ a {
 	border-bottom: 10px solid #ee3643;
 }
 
-.sort-direction-item.down.current a {
+.sort-direction-item.up.current a:hover {
+	border-bottom: 10px solid #000000;
+}
+
+.sort-direction-item.down.current a:active {
 	border-top: 10px solid #ee3643;
+}
+
+.sort-direction-item.down a:hover {
+	border-top: 10px solid #000000;
 }
 
 /*------------------------ Каталог товаров ---------------------*/
