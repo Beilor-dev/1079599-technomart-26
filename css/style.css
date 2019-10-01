@@ -383,9 +383,14 @@ a {
 
 	fill: #c5c5c5;
 }
+.login-icon--state-active {
+
+}
+
+
 
 .just-ico {
-	margin-right: 14px;
+	margin-right: 40px;
 	width: 20px;
 	height: 17px;
 
@@ -1884,10 +1889,18 @@ a {
 	background-repeat: no-repeat;
 }
 
-.filters-brands-item input:checked + .filters-brands-desc {
+/*.filters-brands-item input:checked + .filters-brands-desc {
     background-image: url("../img/checkbox-on.svg");
 
 }
+*/
+
+.filters-brands-item:active {
+	background-image: url("../img/checkbox-on.svg");
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
 
 
 .filters-supply {
