@@ -100,7 +100,7 @@ a {
 	display: flex;
 	width: 220px;
 	padding: 9px 20px;
-	box-sizing: border-box; 
+	/*box-sizing: border-box; */
 	align-items: center;
 	justify-content: center;
 
@@ -135,7 +135,7 @@ a {
 	width: 100%;
 	height: 100%;
 	padding: 10px 15px 10px 49px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: center;
 
 	font-size: 17px;
@@ -184,7 +184,7 @@ a {
 	display: flex;
 	width: 150px;
 	padding: 12px 17px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: center;
 
 	font-size: 17px;
@@ -239,7 +239,7 @@ a {
 	display: flex;
 	width: 150px;
 	padding: 12px 17px; 
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: center;
 	justify-content: center;
 
@@ -264,7 +264,7 @@ a {
 	display: flex;
 	min-height: 158px;
 	padding: 45px 0 30px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: flex-start;
 }
 
@@ -273,7 +273,7 @@ a {
 	margin-right: 20px;
 	width: 300px;
 	padding: 0 53px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	padding-top: 5px;
 
 	font-style: italic;
@@ -308,7 +308,7 @@ a {
 	width: 100%;
 	min-height: 45px;
 	padding: 6px 6px 6px 53px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: center;  
 
 	font-size: 21px;
@@ -342,7 +342,7 @@ a {
 	display: flex;
 	min-height: 45px;
 	padding: 10px 14px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: center;
 
 	font-size: 21px;
@@ -384,7 +384,7 @@ a {
 }
 
 .login-icon--cabinet {
-	padding-right: 10px;
+	/*padding-right: 10px; */
 	width: 20px;
 	height: 17px;
 
@@ -442,7 +442,7 @@ a {
 .login-cabinet-item > a {
 	display: flex;
 	min-height: 45px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: center;
 
 	font-size: 21px;
@@ -532,7 +532,9 @@ a {
 	align-items: center;
 
 	font-size: 17px;
+/*	
 	line-height: 17px;
+*/	
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
 	color: #ffffff;
 }
@@ -561,7 +563,7 @@ a {
 	width: 300px;
 	min-height: 123px;
 	padding: 13px 25px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	flex-direction: column;
 	justify-content: center;
 	overflow: hidden;
@@ -678,7 +680,7 @@ a {
 	width: 100%;
 	height: 89px;
 	padding: 20px 30px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	justify-content: space-between;
 	align-items: center;
 	flex-grow: 1;
@@ -717,7 +719,7 @@ a {
 	width: 220px;
 	min-height: 318px;
 	padding-bottom: 20px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	flex-direction: column;
 	align-items: center;
 	overflow: hidden;
@@ -756,7 +758,7 @@ a {
 	width: 100%;
 	height: 180px;
 	padding: 5px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
@@ -820,7 +822,7 @@ a {
 	width: 100px;
 	height: 38px;
 	padding-right: 3px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	justify-content: center;
 	align-items: center;
 
@@ -874,7 +876,7 @@ a {
 	width: 100%;
 	height: 180px;
 	padding: 5px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -890,7 +892,7 @@ a {
 	width: 135px;
 	min-height: 38px;
 	padding: 10px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	justify-content: center;
 	align-items: center;
 
@@ -979,7 +981,7 @@ a {
 	width: 100%;
 	height: 89px;
 	padding: 20px 25px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	justify-content: space-between;
 	align-items: center;
 	flex-grow: 1;
@@ -1017,7 +1019,7 @@ a {
 	display: flex;
 	width: 220px;
 	min-height: 145px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
@@ -1163,7 +1165,7 @@ a {
 	display: inline-flex;
 	min-height: 38px;
 	padding: 10px 20px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: center;
 	justify-content: center;
 
@@ -1181,12 +1183,16 @@ a {
 }
 
 .contacts-button:hover,
-.about-us-button:hover {
+.about-us-button:hover,
+.feedback-button:hover,
+.basket-button:hover {
 	background-color: #ca2c37;
 }
 
 .contacts-button:active,
-.about-us-button:active {
+.about-us-button:active,
+.feedback-button:active,
+.basket-button:active {
 	background-color: #ba2732;
 }
 
@@ -1485,13 +1491,10 @@ a {
 	
 	margin: auto;
 	display: none;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 
 	box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75) 
 }
-
-
-
 
 .modal-feedback {
 	width: 620px;
@@ -1518,7 +1521,7 @@ a {
 	width: 100%;
 	height: 311px;
 	padding: 45px 80px 37px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 
 	background-color: #ffffff;
 }
@@ -1554,7 +1557,7 @@ a {
 	height: 38px;
 	padding: 0;
 	padding: 10px 16px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 
 	border: 2px solid #dee3e4;
 	border-radius: 3px;
@@ -1573,7 +1576,7 @@ a {
 	width: 100%;
 	height: 114px;
 	padding: 10px 16px;
-	box-sizing: border-box;
+/*	box-sizing: border-box; */
 
 	border: 2px solid #dee3e4;
 	border-radius: 3px;
@@ -1594,27 +1597,24 @@ a {
 }
 
 .modal-close,
-.modal-close-2 {
-
-	padding: 0;
-	border: 0;
-	background: none;
-
+.modal-close.second {
 	position: absolute;
 	top: 16px;
 	right: 9px;
 
+	padding: 0;
+	border: 0;
 	display: block;
 	width: 21px;
 	height: 21px;
-
+	outline: none;
+	
+	background: none;
 	background-image: url("../img/icon-close.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	cursor: pointer;
 }
-
-
 
 /*------------------ Карта --------------------*/
 .modal-map {
@@ -1642,7 +1642,7 @@ a {
 	width: 100%;
 	padding:75px 120px 75px 176px;
 
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 
 	background-color: #ffffff;
 }
@@ -1686,6 +1686,7 @@ a {
 	margin-bottom: 37px;
 	margin-right: 20px;
     width: 220px;
+    outline: none;
 }
 
 .continue-button {
@@ -1756,7 +1757,7 @@ a {
 	display: flex;
 	height: 89px;
 	padding: 0 30px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: center;
 
 	font-weight: normal;
@@ -1784,7 +1785,7 @@ a {
 	width: 100%;
 	height: 38px;
 	padding: 0px 18px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: center;
 
 	font-weight: normal;
@@ -1806,6 +1807,7 @@ a {
 	border: 0;
 	margin-bottom: 15px;
 	padding-bottom: 23px;
+
 	border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1828,7 +1830,7 @@ a {
 	display: flex;
 	height: 80px;
 	padding: 20px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: center;
 
 	background-color: #f7f3ec;
@@ -1850,7 +1852,7 @@ a {
 	padding: 0;
 	width: 20px;
 	height: 20px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 
 	background: none;
 	background-color: #ababab;
@@ -1875,7 +1877,7 @@ a {
 	padding: 0;
 	width: 95px;
 	height: 38px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: center;
 	display: flex;
 
@@ -2027,7 +2029,7 @@ a {
 	width: 100%;
 	height: 38px;
 	padding: 0px 18px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: center;
 
 	font-weight: normal;
@@ -2172,7 +2174,7 @@ a {
 	width: 220px;
 	min-height: 318px;
 	padding-bottom: 20px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	flex-direction: column;
 	align-items: center;
 	overflow: hidden;
@@ -2189,7 +2191,7 @@ a {
 	width: 100%;
 	height: 180px;
 	padding: 5px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
@@ -2250,7 +2252,7 @@ a {
 	width: 100px;
 	height: 38px;
 	padding-right: 3px;  
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	justify-content: center;
 	align-items: center;
 
@@ -2329,7 +2331,7 @@ a {
 	width: 100%;
 	height: 170px;
 	padding: 5px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -2343,7 +2345,7 @@ a {
 	width: 135px;
 	min-height: 38px;
 	padding: 10px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	justify-content: center;
 	align-items: center;
 
@@ -2450,7 +2452,7 @@ a {
 	display:flex;
 	min-width: 38px;
 	height: 38px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	align-items: center;
 	justify-content: center;
 
