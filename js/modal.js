@@ -1,5 +1,6 @@
-var catalogbutton = document.querySelector(".catalog-list");
+var catalogbutton = document.querySelector(".buy");
 var inner = catalogbutton.querySelectorAll(".buy");
+
 
 var popupthree = document.querySelector(".modal-purchases");
 var close = popupthree.querySelector(".modal-close");
