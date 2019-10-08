@@ -659,9 +659,144 @@ a {
 	width: 620px;
 	height: 266px;
     
-    background-image: url("../img/slider-1-photo.jpg");
-
+    background-image: ("../img/slider-1.jpg");
 }
+.variation-block__slide {
+	position: relative;
+
+	width: 100%;
+	height: 100%;
+	padding: 25px 25px 22px;
+	flex-direction: column;
+	
+}
+
+.variation-block__slide.first {
+	display: block;
+	background-image: url("../img/slider-1.jpg");
+}
+
+.variation-block__slide.second {
+	display: none;
+	background-image: url("../img/slider-2.jpg");
+}
+
+.block-item-tittl {
+	margin: 0;
+
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 36px;
+	font-family: "Cuprum", Tahoma, Geneva, sans-serif; 
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.block-item-depiction {
+	margin: 0;
+
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "PT Sans", Tahoma, Geneva, sans-serif; 
+	color: #ffffff;
+}
+
+.slider-button {
+	margin-top: 120px;
+	width: 195px;
+}
+
+.button.slider-button:active {
+    background-color: #ba2732;
+}
+
+.slider-button:hover {
+    background-color: #ca2c37;
+}
+
+.arrow-conteiner {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+	display: flex;
+	width: 576px;
+	height: 40px;
+	justify-content: space-between;
+}
+
+.variation-block__arrow {
+	padding: 0;
+	display: block;
+	width: 22px;
+	height: 40px;
+	
+	border: 0;
+	background-image:url("../img/icon-left.svg"); 
+	background-position:center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.categiry-block__arrow_right {
+	transform: scale(-1, 1);
+}
+
+.variation-block__radio-wrapper {
+	position: absolute;
+	bottom: 36px;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+	display: flex;
+	width: 30px;
+	height: 10px;
+	justify-content: space-between;
+}
+
+.variation-block__radio {
+	width: 10px;
+	height: 10px;
+
+	box-sizing: border-box;
+	background-color: #ffffff;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.variation-block__radio.active {
+	background-color: #ee3643;
+}	
+
+.variation-block__slider .variation-block__slide {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
 
 /*---------------- Популярные товары ------------*/
 
@@ -1249,7 +1384,8 @@ a {
 .about-us-button,
 .feedback-button,
 .basket-button,
-.continue-button {
+.continue-button,
+.slider-button {
 	padding: 0;
 	display: inline-flex;
 	min-height: 38px;

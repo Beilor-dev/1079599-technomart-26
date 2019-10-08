@@ -90,23 +90,25 @@
      </div>
      <div class="container-slider">
      <div class="variation-block__slider">
-      <div class="variation-block__slide">
-        <h4 class="block-item-tittle">Дрели</h4>
+      <div class="variation-block__slide first">
+        <h4 class="block-item-tittl">Дрели</h4>
         <p class="block-item-depiction">Соседям на радость!</p>
-        <a class="" href="#">Открыть каталог</a>
+        <a class="button slider-button" href="catalog.html">Открыть каталог</a>
         <!-- картинка будет фоном -->
        </div>
-       <div class="variation-block__slide">
-         <h4 class="block-item-tittle">Перфораторы</h4>
+       <div class="variation-block__slide second">
+         <h4 class="block-item-tittl">Перфораторы</h4>
          <p class="block-item-depiction">Настоящие мужские игрушки</p>
-         <a class="" href="#">Открыть каталог</a>
+         <a class="button slider-button" href="catalog.html">Открыть каталог</a>
          <!-- картинка будет фоном -->
        </div>
-       <span class="variation-block__arrow categiry-block__arrow_left"></span>
-       <span class="variation-block__arrow categiry-block__arrow_right"></span>
+       <div class="arrow-conteiner">
+       <span class="variation-block__arrow categiry-block__arrow_left" onclick="minusSlide()"></span>
+       <span class="variation-block__arrow categiry-block__arrow_right" onclick="plusSlide()"></span>
+       </div>
        <div class="variation-block__radio-wrapper">
-         <span class="variation-block__radio"></span>
-         <span class="variation-block__radio"></span>
+         <span class="variation-block__radio active" onclick="currentSlide(1)"></span>
+         <span class="variation-block__radio" onclick="currentSlide(2)"></span>
        </div>
      </div>
      <div class="variation-block discount">
@@ -359,6 +361,7 @@
   </button>
 </section> 
 <script src="js/script.js"></script>
-<script src="js/modalmap.js"></script>    
+<script src="js/modalmap.js"></script> 
+<script src="js/slider.js"></script>    
 </body>
 </html>

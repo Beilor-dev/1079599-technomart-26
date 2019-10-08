@@ -1,14 +1,13 @@
-var catalogbutton = document.querySelector(".buy");
-var inner = catalogbutton.querySelectorAll(".buy");
-
+var buyButton = document.querySelectorAll(".buy");
 
 var popupthree = document.querySelector(".modal-purchases");
 var close = popupthree.querySelector(".modal-close");
 
-catalogbutton.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popupthree.classList.add("modal-show");
-});
+ for (let i = 0; i < buyButton.length; i++) {
+     buyButton[i].addEventListener("click", function(evt) {
+       popupthree.classList.add("modal-show");
+     });
+ }
 
 close.addEventListener("click", function (evt) {
   	evt.preventDefault();
