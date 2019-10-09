@@ -229,9 +229,9 @@
   </div>
   <div class="services-slider">
     <ul class="services-slider-list">
-     <li class="services-slider-options">Доставка</li>
-     <li class="services-slider-options">Гарантия</li>
-     <li class="services-slider-options">Кредит</li>
+     <li class="services-slider-options" onclick="currentSlider(1)" tabindex="0">Доставка</li>
+     <li class="services-slider-options" onclick="currentSlider(2)" tabindex="0">Гарантия</li>
+     <li class="services-slider-options" onclick="currentSlider(3)" tabindex="0">Кредит</li>
    </ul>
    <div class="services-slider-content">
     <div class="services-slider-item">
@@ -243,18 +243,17 @@
       <!-- фон будет картинкой -->
     </div>
     <div class="services-slider-item">
-      <h3 class="">Гарантия</h3>
-      <p class="">Если купленный у нас товар поломается или заискрит,
-        <br> а также в случае пожара, спровоцированного его возгаранием, 
-        <br> вы всегда можеете быть уверены в нашей гарантии. Мы обменяем 
-        <br>сгоревший товар на новый. 
-        <br>Дом уж восстановите как-нибудь сами.
+      <h3 class="services-operation-tittle">Гарантия</h3>
+      <p class="services-operation-desc">Если купленный у нас товар поломается или заискрит,
+         а также в случае пожара,<br> спровоцированного его возгаранием, 
+        вы всегда <br> можеете быть уверены в нашей гарантии. Мы <br> обменяем сгоревший товар на новый. 
+        Дом уж <br> восстановите как-нибудь сами.
       </p>
       <!-- фон будет картинкой -->
     </div>
     <div class="services-slider-item">
-      <h3 class="">Кредит</h3>
-      <p class="">Залезть в долговую яму стало проще! 
+      <h3 class="services-operation-tittle">Кредит</h3>
+      <p class="services-operation-desc">Залезть в долговую яму стало проще! 
         <br> Кредитные консультанты придут вам на помощь.
       </p>
       <a class="" href="#">Отправить заявку</a>
@@ -362,6 +361,7 @@
 </section> 
 <script src="js/script.js"></script>
 <script src="js/modalmap.js"></script> 
-<script src="js/slider.js"></script>    
+<script src="js/slider.js"></script>
+<script src="js/service-slider.js"></script>     
 </body>
 </html>

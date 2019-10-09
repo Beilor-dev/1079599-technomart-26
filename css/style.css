@@ -1240,9 +1240,25 @@ a {
 	font-size: 21px;
 	line-height: 30px;
 	font-family: "Cuprum", Tahoma, Geneva, sans-serif;
-	
+	color: #ffffff;
+
+	background-color: #32425c;
 	border-bottom: 1px solid #4d637b;
+	cursor: pointer;
 }
+
+.services-slider-options:hover {
+	background-color: #293449;
+}
+
+.services-slider-options:focus {
+	color: #32425c;
+
+    outline: none;
+	border-bottom: none;
+	background-color: #ffffff;
+}
+
 
 .services-slider-item {
 	width: 620px;
