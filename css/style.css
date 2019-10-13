@@ -345,10 +345,10 @@ a {
 	background-color: #ffffff;
 }
 
-.user-cabinet-item:hover a {
+.user-cabinet-item a:hover  {
 	color: #ee3643;
 }
-.user-cabinet-item:active a {
+.user-cabinet-item a:active  {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -529,18 +529,18 @@ a {
 	color: #ffffff;
 }
 
-.header-nav-link:hover a {
+.header-nav-link a:hover  {
 	background-color: #293449;
 }
 
-.header-nav-link:active a {
+.header-nav-link a:active  {
 	color: rgba(255, 255, 255, 0.5);
 }
 
 /*---------------- Особенности магазина ------------*/
 
 .variation {
-	padding: 60px 0px 53px;
+	padding: 58px 0px 0px;
 	font-size: 0;
 }
 
@@ -702,7 +702,8 @@ a {
 }
 
 .slider-button {
-	margin-top: 120px;
+	margin-left: 2px;
+	margin-top: 122px;
 	width: 195px;
 }
 
@@ -803,7 +804,8 @@ a {
 .favorite {
 	display: flex;
 	flex-wrap: wrap;
-	padding-bottom: 20px;
+	padding: 32px 0px 0px 0px; 
+	/*padding-bottom: 20px;*/
 }
 
 .favorite-tittle-container {
@@ -811,7 +813,8 @@ a {
 	display: flex;
 	width: 100%;
 	height: 89px;
-	padding: 20px 30px;
+	/*padding: 20px 30px;*/
+	padding: 15px 22px 15px 28px;
 	justify-content: space-between;
 	align-items: center;
 	flex-grow: 1;
@@ -919,7 +922,7 @@ a {
 
 .favorite-item-tittle {
 	margin: 0;
-	margin-bottom: 0;
+	margin-bottom: -6px;
 
 	max-width: 170px;
 
@@ -948,7 +951,7 @@ a {
 
 	margin-top: auto;
 	display: inline-flex;
-	width: 100px;
+	width: 107px;
 	height: 38px;
 	padding-right: 3px;
 	justify-content: center;
@@ -983,7 +986,7 @@ a {
 	content: "";
 
 	position: absolute;
-	left: -20px;
+	left: -12px;
 	top: 0;
 
 	display: block;
@@ -1106,7 +1109,8 @@ a {
 	display: flex;
 	width: 100%;
 	height: 89px;
-	padding: 20px 25px;
+	/*padding: 20px 25px;*/
+	padding: 16px 24px 11px 28px;
 	justify-content: space-between;
 	align-items: center;
 	flex-grow: 1;
@@ -1185,7 +1189,7 @@ a {
 .services {
 	width: 100%;
 	min-height: 522px;
-	padding: 65px 0 0;
+	padding: 69px 0 0;
 
 	background-color: #f2f6f8;
 }
@@ -1218,6 +1222,20 @@ a {
 	justify-content: space-between;
 }
 
+/*.services-slider-list::after {
+	content: "";
+	position: absolute;
+	top: -10px;
+	right: 0;
+
+	width: 10px;
+	height: 279px;
+
+	background-image: url("../img/services-shadow-icon.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}*/
+
 .services-slider-list {
 	position: relative;
 
@@ -1226,13 +1244,24 @@ a {
 	width: 240px;
 	min-height: 279px;
 	padding-left: 0;
-	padding-top: 40px;
+	padding-top: 37px;
+}
+
+.services-slider-options:after {
+	content:"";
+	position:absolute;
+	top:0px;
+	bottom:33px;
+	left:240px;
+	right: -55px;
+
+	box-shadow: -12px 0px 28px -25px rgba(0,0,0,0.75);
 }
 
 .services-slider-options {
 	display: flex;
 	width: 240px;
-	min-height: 61px;
+	min-height: 62px;
 	padding: 11px 22px;
 	align-items: center;
 
@@ -1259,17 +1288,16 @@ a {
 	background-color: #ffffff;
 }
 
-
 .services-slider-item {
 	width: 620px;
 	min-height: 299px;
-	padding-top: 40px;
+	padding-top: 36px;
 
 }
 
 .services-operation-tittle {
 	margin: 0;
-	margin-bottom: 22px;
+	margin-bottom: 25px;
 
 	font-weight: normal;
 	font-size: 36px;
@@ -1295,12 +1323,36 @@ a {
 	display: none;
 }
 
+.services-button.button {
+	width: 195px;
+	background-color: #ff5357;
+}
+
+.services-slider-item {
+	background-image: url("../img/delivery.png");
+	background-position: right top  62px;
+	background-repeat: no-repeat;
+}
+
+.services-slider-item:nth-last-child(-n+2) {
+	background-image: url("../img/cash.png");
+	background-position: right top  62px;
+	background-repeat: no-repeat;
+}
+
+.services-slider-item:last-child {
+	background-image: url("../img/garante.png");
+	background-position: right top  62px;
+	background-repeat: no-repeat;
+}
+
+
 
 /*------------------- О компании ------------------*/
 
 .two-columns {
 	display: flex;
-	padding: 80px 0px 85px;
+	padding: 82px 0px 85px;
 	justify-content: space-between;
 }
 
@@ -1324,7 +1376,7 @@ a {
 .about-us-desc,
 .contacts-desc {
 	margin: 0;
-	margin-bottom: 25px;
+	margin-bottom: 24px;
 
 	font-weight: normal;
 	font-size: 13px;
@@ -1340,7 +1392,7 @@ a {
 .about-us-list {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 
 	list-style: none;
 }
@@ -1378,7 +1430,7 @@ a {
 }
 
 .contacts-desc {
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 }
 
 .contacts-img {
@@ -1401,7 +1453,8 @@ a {
 .feedback-button,
 .basket-button,
 .continue-button,
-.slider-button {
+.slider-button,
+.services-button {
 	padding: 0;
 	display: inline-flex;
 	min-height: 38px;
@@ -1425,14 +1478,16 @@ a {
 .contacts-button:hover,
 .about-us-button:hover,
 .feedback-button:hover,
-.basket-button:hover {
+.basket-button:hover,
+.services-button:hover {
 	background-color: #ca2c37;
 }
 
 .contacts-button:active,
 .about-us-button:active,
 .feedback-button:active,
-.basket-button:active {
+.basket-button:active,
+.services-button:active {
 	background-color: #ba2732;
 }
 
@@ -1456,7 +1511,7 @@ a {
 }
 
 .device-info-desc {
-	margin: 0px; 
+	margin: 2px; 
 
 	font-weight: normal;
 	font-size: 13px;
@@ -1472,7 +1527,7 @@ a {
 }
 
 .footer-top {
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -1497,7 +1552,7 @@ a {
 }
 
 .footer-nav-list {
-	margin: 0;
+	margin: 1px;
 	padding: 0;
 	list-style: none;
 
@@ -1508,7 +1563,7 @@ a {
 }
 
 .footer-nav-link {
-	margin-right: 60px;
+	margin-right: 59px;
 }
 
 .footer-nav-link:last-child {
@@ -1524,14 +1579,14 @@ a {
 }
 
 .footer-middle {
-	margin-bottom: 50px;
+	margin-bottom: 49px;
 	display: flex;
 	justify-content: space-between;
 }
 
 .footer-contact address,
 .footer-contact a {
-	margin: 0;
+	margin: 2px;
 	padding: 0;  
 	width:;
 
@@ -1592,7 +1647,7 @@ a {
 
 .footer-bottom .center {
 	display: flex;
-	height: 107px;
+	height: 104px;
 	align-items: center;
 }
 
@@ -1612,8 +1667,9 @@ a {
 	display: flex;
 	margin: 0; 
 	padding: 0;
-	list-style: none;
 	margin-right: 120px;
+
+	list-style: none;
 }
 
 .social-link:not(:last-child) {
@@ -2205,7 +2261,7 @@ a {
 
 .filters-supply-desc {
 	display: flex;
-	height: 25px;
+	/*height: 25px;*/
 	align-items: center;
 	padding-left: 35px;
 
@@ -2232,7 +2288,7 @@ a {
 	padding: 0;
 	display: flex;
 	width: 140px;
-	height: 38px;
+	height: 48px;
 	justify-content: center;
 	align-items: center;
 
