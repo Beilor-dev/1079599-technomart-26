@@ -780,6 +780,7 @@ a {
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
     from {
         opacity: .4
@@ -1280,13 +1281,19 @@ a {
 	background-color: #293449;
 }
 
-.services-slider-options:focus {
+.dynamic {
 	color: #32425c;
 
-    outline: none;
 	border-bottom: none;
 	background-color: #ffffff;
 }
+
+.dynamic:hover {
+	color: #32425c;
+
+	background-color: #ffffff;
+}
+
 
 .services-slider-item {
 	width: 620px;

@@ -27,4 +27,16 @@ function showSlide(n) {
    
 }
 
+/*Динамические изменения слайдера */
 
+var sliderDyn = document.getElementById("myDyn");
+var btns = sliderDyn.getElementsByClassName("services-slider-options");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("dynamic");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" dynamic", "");
+  }
+  this.className += " dynamic";
+});
+}
