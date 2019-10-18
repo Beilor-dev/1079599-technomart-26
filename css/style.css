@@ -1912,8 +1912,7 @@ a {
 	width: 460px;
 }
 
-.modal-close,
-.modal-close.second {
+.modal-close {
 	position: absolute;
 	top: 16px;
 	right: 9px;
