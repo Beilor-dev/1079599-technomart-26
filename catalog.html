@@ -136,7 +136,7 @@
                   <label class="filters-brands-desc" for="dewalt" tabindex="0">Dewalt</label>
                 </li>
                 <li class="filters-brands-item">
-                  <input type="checkbox" name="filters-brands" value="hitachi" id="hitachi">
+                  <input type="checkbox" name="filters-brands" value="hitachi" id="hitachi" disabled>
                   <label class="filters-brands-desc" for="hitachi" tabindex="0">Hitachi</label>
                 </li>
               </ul>
@@ -145,7 +145,7 @@
               <legend class="filters-supply-tittle">Питание:</legend>
               <ul class="filters-supply-list">
                 <li class="filters-supply-item">
-                  <input type="radio"  name="filters-supply" value="battery" id="battery" checked>
+                  <input type="radio" name="filters-supply" value="battery" id="battery" checked>
                   <label class="filters-supply-desc" for="battery" tabindex="0">Аккумуляторные</label>
                 </li>
                 <li class="filters-supply-item">
@@ -362,12 +362,11 @@
           <a class="button basket-button" href="#">Оформить заказ</a>
           <a class="button continue-button" href="#">Продолжить покупки</a>
         </div>
-        <button class="">
+        <button class="modal-close third">
         <span class="visually-hidden">Закрыть</span>
         </button>
       </form>
     </div>
-    <script src="js/modalform.js"></script>
-   <!--  <script src="js/modalbuy.js"></script> -->
+    <script src="js/modalbuymin.js"></script>
   </body>
 </html>

@@ -107,12 +107,12 @@
               <!-- картинка будет фоном -->
             </div>
             <div class="arrow-conteiner">
-              <span class="variation-block__arrow categiry-block__arrow_left" aria-label="Стрелка влево" onclick="minusSlide()"></span>
-              <span class="variation-block__arrow categiry-block__arrow_right" aria-label="Стрелка вправо" onclick="plusSlide()"></span>
+              <span class="variation-block__arrow categiry-block__arrow_left" aria-label="Стрелка влево" id="minusSlide"></span>
+              <span class="variation-block__arrow categiry-block__arrow_right" aria-label="Стрелка вправо" id="plusSlide"></span>
             </div>
             <div class="variation-block__radio-wrapper">
-              <span class="variation-block__radio active"  aria-label="Кнопка влево" onclick="currentSlide(1)"></span>
-              <span class="variation-block__radio" aria-label="Стрелка вправо" onclick="currentSlide(2)"></span>
+              <span class="variation-block__radio active"  aria-label="Кнопка влево" id="plusRadio"></span>
+              <span class="variation-block__radio" aria-label="Стрелка вправо" id="minusRadio"></span>
             </div>
           </div>
           <div class="variation-block-container">
@@ -236,9 +236,9 @@
           </div>
           <div class="services-slider">
             <ul class="services-slider-list" id="myDyn">
-              <li class="services-slider-options dynamic" onclick="currentSlider(1)">Доставка</li>
-              <li class="services-slider-options" onclick="currentSlider(2)">Гарантия</li>
-              <li class="services-slider-options" onclick="currentSlider(3)">Кредит</li>
+              <li class="services-slider-options dynamic">Доставка</li>
+              <li class="services-slider-options">Гарантия</li>
+              <li class="services-slider-options">Кредит</li>
             </ul>
             <div class="services-slider-content">
               <div class="services-slider-item">
@@ -344,22 +344,22 @@
           <div class="feedback-user-info">
             <p class="user-info-field">
               <label for="feedback-username">Ваше имя:</label>
-              <input type="text" name="feedback-username" placeholder="Представьтесь, пожалуйста" id="feedback-username">
+              <input class="" type="text" name="feedback-username" placeholder="Представьтесь, пожалуйста" id="feedback-username">
             </p>
             <p class="user-info-field">
               <label for="feedback-email">Ваш email:</label>
-              <input type="text" name="feedback-email" placeholder="Для отправки ответа" id="feedback-email">
+              <input class="feedback-email" type="text" name="feedback-email" placeholder="Для отправки ответа" id="feedback-email">
             </p>
           </div>
           <p class="feedback-field">
             <label for="feedback-text">Текст письма:</label>
-            <textarea name="feedback-text" placeholder="В свободной форме" id="feedback-text"></textarea>
+            <textarea class="feedback-text" name="feedback-text" placeholder="В свободной форме" id="feedback-text"></textarea>
           </p>
         </div>
         <div class="feedback-button-box">
           <button class="button feedback-button" type="submit">Отправить</button>
         </div>
-        <button class="modal-close first">
+        <button class="modal-close first" id="close">
         <span class="visually-hidden">Закрыть</span>
         </button>
       </form>
@@ -371,9 +371,6 @@
       <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
-    <script src="js/modalform.js"></script>
-    <!-- <script src="js/modalmap.js"></script>  -->
-    <script src="js/item-slider.js"></script>
-    <script src="js/service-slider.js"></script>   
+    <script src="js/modalindexmin.js"></script>
   </body>
 </html>

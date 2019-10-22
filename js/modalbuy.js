@@ -1,3 +1,5 @@
+                  
+                  /* Вызов Покупки */
 var buyButton = document.querySelectorAll(".buy");
 
 var popupthree = document.querySelector(".modal-purchases");
@@ -22,4 +24,4 @@ close.addEventListener("click", function (evt) {
         popupthree.classList.remove("modal-show");
       }
     }
-  });
+});
