@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Техномарт</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minimize.css">
   </head>
   <body>
     <header class="site-header">
@@ -120,24 +120,24 @@
               <legend class="filters-brands-tittle">Производители</legend>
               <ul class="filters-brands-list">
                 <li class="filters-brands-item">
-                  <input type="checkbox" name="filters-brands" value="bosh" id="bosh" checked>
+                  <input class="check-input" type="checkbox" name="filters-brands" value="bosh" id="bosh" checked>
                   <label class="filters-brands-desc" for="bosh" tabindex="0">Bosch</label>
                 </li>
                 <li class="filters-brands-item">
-                  <input type="checkbox" name="filters-brands" value="interscol" id="interscol">
+                  <input class="check-input" type="checkbox" name="filters-brands" value="interscol" id="interscol">
                   <label class="filters-brands-desc" for="interscol" tabindex="0">Интерскол</label>
                 </li>
                 <li class="filters-brands-item">
-                  <input type="checkbox" name="filters-brands" value="makita" id="makita" checked>
+                  <input class="check-input" type="checkbox" name="filters-brands" value="makita" id="makita" checked>
                   <label class="filters-brands-desc" for="makita" tabindex="0">Makita</label>
                 </li>
                 <li class="filters-brands-item">
-                  <input type="checkbox" name="filters-brands" value="dewalt" id="dewalt">
-                  <label class="filters-brands-desc" for="dewalt" tabindex="0">Dewalt</label>
+                  <input class="check-input" type="checkbox" name="filters-brands" value="dewalt" id="dewalt" checked disabled>
+                  <label class="filters-brands-desc" for="dewalt">Dewalt</label>
                 </li>
                 <li class="filters-brands-item">
-                  <input type="checkbox" name="filters-brands" value="hitachi" id="hitachi" disabled>
-                  <label class="filters-brands-desc" for="hitachi" tabindex="0">Hitachi</label>
+                  <input class="check-input" type="checkbox" name="filters-brands" value="hitachi" id="hitachi" disabled>
+                  <label class="filters-brands-desc" for="hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
@@ -145,12 +145,12 @@
               <legend class="filters-supply-tittle">Питание:</legend>
               <ul class="filters-supply-list">
                 <li class="filters-supply-item">
-                  <input type="radio" name="filters-supply" value="battery" id="battery" checked>
+                  <input class="radio-input" type="radio" name="filters-supply" value="battery" id="battery" checked tabindex="0">
                   <label class="filters-supply-desc" for="battery" tabindex="0">Аккумуляторные</label>
                 </li>
                 <li class="filters-supply-item">
-                  <input type="radio"  name="filters-supply" value="network" id="network">
-                  <label class="filters-supply-desc" for="network" tabindex="0">Сетевые</label>
+                  <input class="radio-input" type="radio"  name="filters-supply" value="network" id="network" disabled>
+                  <label class="filters-supply-desc" for="network">Сетевые</label>
                 </li>
               </ul>
             </fieldset>

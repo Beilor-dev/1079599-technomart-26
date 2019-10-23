@@ -376,7 +376,6 @@ a {
 	width: 299px;
 }
 
-
 .login-icon {
 	margin-right: 14px;
 	width: 20px;
@@ -461,7 +460,6 @@ a {
 	margin-top: 5px;
 	margin-left: 18px;
 	display: flex;   
-
 }
 
 .login-cabinet-subitem a {
@@ -665,6 +663,7 @@ a {
     background-color: #372521;
     background-image: ("../img/slider-1.jpg");
 }
+
 .variation-block__slide {
 	position: relative;
 
@@ -672,7 +671,6 @@ a {
 	height: 100%;
 	padding: 25px 25px 22px;
 	flex-direction: column;
-	
 }
 
 .variation-block__slide.first {
@@ -815,7 +813,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 32px 0px 0px 0px; 
-	/*padding-bottom: 20px;*/
+	
 }
 
 .favorite-tittle-container {
@@ -823,7 +821,6 @@ a {
 	display: flex;
 	width: 100%;
 	height: 89px;
-	/*padding: 20px 30px;*/
 	padding: 15px 22px 15px 28px;
 	justify-content: space-between;
 	align-items: center;
@@ -1120,7 +1117,6 @@ a {
 	display: flex;
 	width: 100%;
 	height: 89px;
-	/*padding: 20px 25px;*/
 	padding: 16px 24px 11px 28px;
 	justify-content: space-between;
 	align-items: center;
@@ -1932,6 +1928,7 @@ a {
 }
 
 /*------------------ Карта --------------------*/
+
 .modal-map {
 	width: 940px;
 	height: 446px;
@@ -2005,8 +2002,7 @@ a {
 
 .continue-button {
 	margin-right: 20px;
-    
-    font-weight:;
+  
 	color: black;
 
 	background-color: #ffffff;
@@ -2086,10 +2082,6 @@ a {
 .catalog-filters {
 	margin-right: 20px;
 	width: 220px;
-}
-
-.filters-form {
-
 }
 
 .filters-tittle {
@@ -2179,10 +2171,6 @@ a {
 	justify-content: space-between;	
 }
 
-.filters-price-field {
-	margin: ;
-}
-
 .filters-price-input input {
 	padding: 0;
 	width: 95px;
@@ -2255,37 +2243,36 @@ a {
 	background-image: url("../img/checkbox-off.svg");
 	background-position: left center;
 	background-repeat: no-repeat;
+} 
+
+.check-input:checked + .filters-brands-desc {
+	background-image: url("../img/checkbox-on.svg");
 }
 
-.filters-brands-item input:checked + .filters-brands-desc {
-    background-image: url("../img/checkbox-on.svg");
+.check-input:checked + .filters-brands-desc:focus {
+	background-image: url("../img/checkbox-hover-on.svg");
 }
 
-.filters-brands-item input:checked + .filters-brands-desc:focus {
-    background-image: url("../img/checkbox-hover-on.svg");
+.check-input + .filters-brands-desc:focus {
+	background-image: url("../img/checkbox-hover-off.svg");
 }
 
-.filters-brands-item input + .filters-brands-desc:focus {
-    background-image: url("../img/checkbox-hover-off.svg");
+.check-input:checked + .filters-brands-desc:hover {
+	background-image: url("../img/checkbox-hover-on.svg");
 }
 
-.filters-brands-item input:checked + .filters-brands-desc:hover {
-    background-image: url("../img/checkbox-hover-on.svg");
+.check-input + .filters-brands-desc:hover {
+	background-image: url("../img/checkbox-hover-off.svg");
 }
 
-.filters-brands-item input + .filters-brands-desc:hover {
-    background-image: url("../img/checkbox-hover-off.svg");
+.check-input:checked:disabled + .filters-brands-desc {
+	background-image: url("../img/checkbox-dis-on.svg");
 }
 
+.check-input:disabled + .filters-brands-desc {
+	background-image: url("../img/checkbox-dis-off.svg");
+}
 
-
-/*:disabled {
-	 background-image: url("../img/radio-dis-off.svg");
-	 border: 1px solid red;
-  	 box-shadow: 0 0 3px red;
-  	 background-color: RED;
- }
-*/
 .filters-supply {
 	padding: 0;
 	border: 0;
@@ -2314,26 +2301,33 @@ a {
 	background-repeat: no-repeat;
 }
 
-.filters-supply-item input:checked + .filters-supply-desc {
+.radio-input:checked + .filters-supply-desc {
 	background-image: url("../img/radio-on.svg");
 }
 
-.filters-supply-item input:checked + .filters-supply-desc:focus {
-    background-image: url("../img/radio-hover-on.svg");
+.radio-input:checked + .filters-supply-desc:focus {
+	background-image: url("../img/radio-hover-on.svg");
 }
 
-.filters-supply-item input + .filters-supply-desc:focus {
-    background-image: url("../img/radio-hover-off.svg");
+.radio-input + .filters-supply-desc:focus {
+	background-image: url("../img/radio-hover-off.svg");
 }
 
-.filters-supply-item input:checked + .filters-supply-desc:hover {
-    background-image: url("../img/radio-hover-on.svg");
+.radio-input:checked + .filters-supply-desc:hover {
+	background-image: url("../img/radio-hover-on.svg");
 }
 
-.filters-supply-item input + .filters-supply-desc:hover {
-    background-image: url("../img/radio-hover-off.svg");
+.radio-input + .filters-supply-desc:hover {
+	background-image: url("../img/radio-hover-off.svg");
 }
 
+.radio-input:checked:disabled + .filters-supply-desc {
+	background-image: url("../img/radio-dis-on.svg");
+}
+
+.radio-input:disabled + .filters-supply-desc {
+	background-image: url("../img/radio-dis-off.svg");
+}
 
 .filters-button {
 	padding: 0;
@@ -2523,7 +2517,6 @@ a {
 	font-family: "PT Sans", Tahoma, Geneva, sans-serif;
 	color: #000000;
 	text-align: center;
-	
 }
 
 .catalog-old-price {
@@ -2687,7 +2680,6 @@ a {
 	background-color: #518534;
 	box-shadow: none;
 }
-
 
 .catalog-item-button.marker {
 	color: #32425c;
